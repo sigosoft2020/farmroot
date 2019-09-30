@@ -1,0 +1,24 @@
+[01-Jul-2019 13:59:05 Asia/Kolkata] PHP Warning:  session_write_close(): Cannot call session save handler in a recursive manner in Unknown on line 0
+[01-Jul-2019 13:59:05 Asia/Kolkata] PHP Warning:  session_write_close(): Failed to write session data using user defined save handler. (session.save_path: /tmp) in Unknown on line 0
+[08-Jul-2019 15:12:14 Asia/Kolkata] PHP Warning:  session_write_close(): Cannot call session save handler in a recursive manner in Unknown on line 0
+[08-Jul-2019 15:12:14 Asia/Kolkata] PHP Warning:  session_write_close(): Failed to write session data using user defined save handler. (session.save_path: /tmp) in Unknown on line 0
+[27-Jul-2019 14:05:08 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Android::getMyBookings() in /home/works/public_html/turf/application/models/Android.php on line 112
+[27-Jul-2019 14:05:08 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Android::getMyBookings() in /home/works/public_html/turf/application/models/Android.php on line 112
+[27-Jul-2019 14:05:16 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Android::getMyBookings() in /home/works/public_html/turf/application/models/Android.php on line 112
+[27-Jul-2019 14:05:16 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Android::getMyBookings() in /home/works/public_html/turf/application/models/Android.php on line 112
+[27-Jul-2019 14:05:23 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Android::getMyBookings() in /home/works/public_html/turf/application/models/Android.php on line 112
+[27-Jul-2019 14:05:23 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Android::getMyBookings() in /home/works/public_html/turf/application/models/Android.php on line 112
+[27-Jul-2019 14:05:31 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Android::getMyBookings() in /home/works/public_html/turf/application/models/Android.php on line 112
+[27-Jul-2019 14:05:36 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Android::getMyBookings() in /home/works/public_html/turf/application/models/Android.php on line 112
+[27-Jul-2019 14:05:36 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Android::getMyBookings() in /home/works/public_html/turf/application/models/Android.php on line 112
+[27-Jul-2019 14:05:40 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Android::getMyBookings() in /home/works/public_html/turf/application/models/Android.php on line 112
+[27-Jul-2019 14:05:40 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Android::getMyBookings() in /home/works/public_html/turf/application/models/Android.php on line 112
+[27-Jul-2019 14:05:42 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Android::getMyBookings() in /home/works/public_html/turf/application/models/Android.php on line 112
+[27-Jul-2019 14:05:42 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Android::getMyBookings() in /home/works/public_html/turf/application/models/Android.php on line 112
+[27-Jul-2019 14:05:42 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Android::getMyBookings() in /home/works/public_html/turf/application/models/Android.php on line 112
+[27-Jul-2019 14:05:46 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Android::getMyBookings() in /home/works/public_html/turf/application/models/Android.php on line 112
+[27-Jul-2019 14:05:58 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Android::getMyBookings() in /home/works/public_html/turf/application/models/Android.php on line 112
+[27-Jul-2019 14:05:58 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Android::getMyBookings() in /home/works/public_html/turf/application/models/Android.php on line 112
+[27-Jul-2019 14:06:04 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Android::getMyBookings() in /home/works/public_html/turf/application/models/Android.php on line 112
+[27-Jul-2019 14:06:04 Asia/Kolkata] PHP Fatal error:  Cannot redeclare Android::getMyBookings() in /home/works/public_html/turf/application/models/Android.php on line 112
+[24-Aug-2019 17:10:05 Asia/Kolkata] PHP Fatal error:  Cannot use empty array elements in arrays in /home/works/public_html/turf/application/models/CancelledStaff.php on line 11
