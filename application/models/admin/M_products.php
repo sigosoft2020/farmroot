@@ -9,19 +9,20 @@ class M_products extends CI_Model
   function make_query()
   {
     $table = "products";
-    $select_column = array("product_id","product_name","image","status","quantity","price","featured");
-    $order_column = array(null,"product_name",null,null);
-
+    $select_column = array("ProductID","ProductName","ProductMRP","ProductUnit","products.CategoryID","products.BrandID","Netweight","ProductImage","category.Category_Id","Category_Title","brands.BrandID","BrandName","ProductStatus");
+    $order_column = array(null,"ProductName",null,null,null,null,null,null,null,null,null,null);
     $this->db->select($select_column);
     $this->db->from($table);
+    $this->db->join('category','category.Category_Id=products.CategoryID','left outer');
+    $this->db->join('brands','brands.BrandID=products.BrandID','left outer');
     if (isset($_POST["search"]["value"])) {
-      $this->db->like("product_name",$_POST["search"]["value"]);
+      $this->db->like("ProductName",$_POST["search"]["value"]);
     }
     if (isset($_POST["order"])) {
       $this->db->order_by($_POST['order']['0']['column'],$_POST['order']['0']['dir']);
     }
     else {
-      $this->db->order_by("product_id","desc");
+      $this->db->order_by("ProductID","desc");
     }
   }
   function make_datatables()

@@ -14,7 +14,7 @@
             <div class="row">
               <div class="col-12">
                 <div class="page-title-box">
-                  <h4 class="page-title float-left">Edit Category</h4>
+                  <h4 class="page-title float-left">Edit Brand</h4>
                   <div class="clearfix"></div>
                 </div>
               </div>
@@ -24,19 +24,19 @@
           <div class="row">
             <div class="col-12">
               <div class="card-box">
-                <form action="<?=site_url('admin/Category/update')?>" method="post">
+                <form action="<?=site_url('admin/brands/update')?>" method="post">
 
-                  <input type="hidden" name="category_id" value="<?=$category->Category_Id?>">
+                  <input type="hidden" name="brand_id" value="<?=$brand->BrandID?>">
                   <div class="row">
                       <div class="col-md-5">
                           <div class="">
                               <div>
-                                  <p class="mb-1 mt-4 font-weight-bold">Category Name</p>
-                                  <input type="text" maxlength="25" name="name" class="form-control" value="<?=$category->Category_Title?>" required>
+                                  <p class="mb-1 mt-4 font-weight-bold">Brand Name</p>
+                                  <input type="text" maxlength="25" name="name" class="form-control" value="<?=$brand->BrandName?>" required>
                               </div>
 
                               <div>
-                                  <p class="mb-1 mt-4 font-weight-bold">Category Image</p>
+                                  <p class="mb-1 mt-4 font-weight-bold">Brand Image</p>
                                   <input type="file" class="form-control" id="upload">
                                   <!-- <input class="sample_input" type="hidden" name="test[image]"> -->
                               </div>
@@ -44,8 +44,8 @@
                               <div>
                                   <p class="mb-1 mt-4 font-weight-bold">Status</p>
                                   <select class="form-control" name="status">
-                                    <option value="Active" <?php if($category->CStatus){?>selected<?php } ?>>Active</option>
-                                    <option value="Blocked" <?php if(!$category->CStatus){?>selected<?php } ?>>Blocked</option>
+                                    <option value="Active" <?php if($brand->BStatus){?>selected<?php } ?>>Active</option>
+                                    <option value="Blocked" <?php if(!$brand->BStatus){?>selected<?php } ?>>Blocked</option>
                                   </select>
                                   <!-- <input class="sample_input" type="hidden" name="test[image]"> -->
                               </div>
@@ -55,7 +55,7 @@
 
                       <div class="col-md-7">
                         <div id="current-image">
-                          <img src="<?=base_url() . $category->CategoryImage?>" height="150px" width="250px">
+                          <img src="<?=base_url() . $brand->BrandImage?>" height="150px" width="250px">
                         </div>
                         <div class="upload-div" style="display:none;">
                           <div id="upload-demo"></div>
@@ -72,7 +72,6 @@
                         <button type="submit" class="btn btn-success btn-rounded waves-light waves-effect w-md pull-right" id="submit-button" style="display:block;">Update</button>
                       </div>
                   </div>
-
                 </form>
               </div>
             </div>

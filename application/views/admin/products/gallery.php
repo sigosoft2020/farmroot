@@ -32,7 +32,7 @@
                       <?php $i=1; foreach ($images as $image) { ?>
                         <div class="col-lg-3 col-md-4 col-xs-6">
                           <a href="#" class="d-block mb-4 h-100">
-                            <img class="img-fluid img-thumbnail" id="<?php echo 'image'.$i; ?>" src="<?=base_url().$image->Image?>" alt="record missing" onclick="showImage(this,<?=$image->ImageID?>)">
+                            <img class="img-fluid img-thumbnail" id="<?php echo 'image'.$i; ?>" src="<?=base_url().$image->product_image?>" alt="record missing" onclick="showImage(this,<?=$image->image_id?>)">
                           </a>
                         </div>
                       <?php $i++; } ?>

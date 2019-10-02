@@ -1,26 +1,26 @@
 <?php
 
-class M_category extends CI_Model
+class M_brand extends CI_Model
 {
   function __construct()
   {
     $this->load->database();
   }
   function make_query(){
-    $table = "category";
-    $select_column = array("Category_Id","Category_Title","CategoryImage","CStatus");
-    $order_column = array(null,"Category_Title",null,null);
+    $table = "brands";
+    $select_column = array("BrandID","BrandName","BrandImage","BStatus");
+    $order_column = array(null,"BrandName",null,null);
 
     $this->db->select($select_column);
     $this->db->from($table);
     if (isset($_POST["search"]["value"])) {
-      $this->db->like("Category_Title",$_POST["search"]["value"]);
+      $this->db->like("BrandName",$_POST["search"]["value"]);
     }
     if (isset($_POST["order"])) {
       $this->db->order_by($_POST['order']['0']['column'],$_POST['order']['0']['dir']);
     }
     else {
-      $this->db->order_by("Category_Id","desc");
+      $this->db->order_by("BrandID","desc");
     }
   }
   function make_datatables()
@@ -41,7 +41,7 @@ class M_category extends CI_Model
   function get_all_data()
   {
     $this->db->select("*");
-    $this->db->from("category");
+    $this->db->from("brands");
     return $this->db->count_all_results();
   }
 }

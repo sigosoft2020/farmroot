@@ -24,31 +24,24 @@ class Products extends CI_Controller {
 		{
 			$sub_array = array();
 			
-			$sub_array[] = '<img src="' . base_url() . $res->image . '" height="50px">';
-			$sub_array[] = $res->product_name;
-			$sub_array[] = $res->quantity;
-			$sub_array[] = $res->price;
-			if($res->featured=='Featured')
-			  {
-               $star = '<a class="btn btn-link" style="font-size:10px;color:green" href="' . site_url('admin/products/featured_remove/'.$res->product_id) . '"><i class="fa fa-star fa-2x"></i></a>'; 
-			  }	
-			 else
-			 {
-              $star ='<a class="btn btn-link" style="font-size:10px;color:green" href="' . site_url('admin/products/featured/'.$res->product_id) . '"><i class="fa fa-star-o fa-2x"></i></a>';
-			 } 
-			$sub_array[] = $star;
-			$sub_array[] = $res->status;
-			$sub_array[] = '<a class="btn btn-link" style="font-size:17px;color:blue" href="' . site_url('admin/products/images/'.$res->product_id) . '"><i class="fa fa-picture-o"></i></a>';
-			$sub_array[] = '<a class="btn btn-link" style="font-size:17px;color:blue" href="' . site_url('admin/products/view/'.$res->product_id) . '"><i class="fa fa-eye"></i></a>';
-			$sub_array[] = '<a class="btn btn-link" style="font-size:17px;color:blue" href="' . site_url('admin/products/edit/'.$res->product_id) . '"><i class="fa fa-pencil"></i></a>';
+			$sub_array[] = '<img src="' . base_url() . $res->ProductImage . '" height="50px">';
+			$sub_array[] = $res->ProductName;
+			$sub_array[] = $res->ProductMRP;
+			$sub_array[] = $res->Category_Title;
+			$sub_array[] = $res->BrandName;
+			$sub_array[] = $res->ProductUnit;
+			$sub_array[] = $res->ProductStatus;
+			$sub_array[] = '<a class="btn btn-link" style="font-size:17px;color:blue" href="' . site_url('admin/products/images/'.$res->ProductID) . '"><i class="fa fa-picture-o"></i></a>';
+			$sub_array[] = '<a class="btn btn-link" style="font-size:17px;color:blue" href="' . site_url('admin/products/view/'.$res->ProductID) . '"><i class="fa fa-eye"></i></a>';
+			$sub_array[] = '<a class="btn btn-link" style="font-size:17px;color:blue" href="' . site_url('admin/products/edit/'.$res->ProductID) . '"><i class="fa fa-pencil"></i></a>';
 			$data[] = $sub_array;
 		}
 
 		$output = array(
-			"draw"   => intval($_POST['draw']),
-			"recordsTotal" => $this->products->get_all_data(),
+			"draw"            => intval($_POST['draw']),
+			"recordsTotal"    => $this->products->get_all_data(),
 			"recordsFiltered" => $this->products->get_filtered_data(),
-			"data" => $data
+			"data"            => $data
 		);
 		echo json_encode($output);
 	}
@@ -56,15 +49,18 @@ class Products extends CI_Controller {
 	public function add()
 	{   
 		$data['category']  = $this->Common->get_details('category',array('Cstatus'=>'Active'))->result();
+		$data['brand']    = $this->Common->get_details('brands',array('BStatus'=>'Active'))->result();
 		$this->load->view('admin/products/add',$data);
 	}
 
 	public function edit($id)
 	{
-		$check = $this->Common->get_details('products',array('product_id' => $id));
+		$check = $this->Common->get_details('products',array('ProductID' => $id));
 		if ($check->num_rows() > 0) 
 		{   
 			$data['category']  = $this->Common->get_details('category',array('Cstatus'=>'Active'))->result();
+			$data['subcategory']  = $this->Common->get_details('subcategory',array('Status'=>'Active'))->result();
+			$data['brand']    = $this->Common->get_details('brands',array('BStatus'=>'Active'))->result();
 			$data['product'] = $check->row();
 			$this->load->view('admin/products/edit',$data);
 		}
@@ -79,25 +75,35 @@ class Products extends CI_Controller {
 		date_default_timezone_set('Asia/Kolkata');
         $timestamp = date('Y-m-d H:i:s');
 
-		$product_name = $this->security->xss_clean($this->input->post('name'));
-		$category_id  = $this->security->xss_clean($this->input->post('category_id'));
-		$quantity     = $this->security->xss_clean($this->input->post('quantity'));
-		$price        = $this->security->xss_clean($this->input->post('price'));
-		$b2b_percentage = $this->security->xss_clean($this->input->post('b2b_percentage'));
-		$b2b_price    = $this->security->xss_clean($this->input->post('b2b_price'));
-		$description  = $this->security->xss_clean($this->input->post('description'));
-		$indication   = $this->security->xss_clean($this->input->post('indication'));
-       
-		if($b2b_price=='')
-		{
-		  $b2b = $price-($price*$b2b_percentage/100);
-		}
-		else
-		{
-		  $b2b = $b2b_price;
-		}
+		$product_name    = $this->security->xss_clean($this->input->post('ProductName'));
+		$malayalam_name  = $this->security->xss_clean($this->input->post('ProductName1'));
+		$manglish_name   = $this->security->xss_clean($this->input->post('manglish_name'));
+		$category_id     = $this->security->xss_clean($this->input->post('category_id'));
+		$subcategory_id  = $this->security->xss_clean($this->input->post('subcategory_id'));
+		$brand_id        = $this->security->xss_clean($this->input->post('brand_id'));
+		$product_type    = $this->security->xss_clean($this->input->post('product_type'));
+		$quantity        = $this->security->xss_clean($this->input->post('Quantity'));
+		$price           = $this->security->xss_clean($this->input->post('price'));
+		$sgst            = $this->security->xss_clean($this->input->post('sgst'));
+		$cgst            = $this->security->xss_clean($this->input->post('cgst'));
+		$unit            = $this->security->xss_clean($this->input->post('Unit'));
+		$unit1           = $this->security->xss_clean($this->input->post('Unit1'));
+		$product_unit    = $unit.$unit1;
+		// $netweight       = $this->security->xss_clean($this->input->post('Netweight'));
+		$manufacturing_date  = $this->security->xss_clean($this->input->post('manufacturing_date'));
+		$expiry_date     = $this->security->xss_clean($this->input->post('expiry_date'));
+		$batch_number    = $this->security->xss_clean($this->input->post('batch_number'));
+		$description     = $this->security->xss_clean($this->input->post('description'));
+		$recipe          = $this->security->xss_clean($this->input->post('recipe'));
 
-		$pr_check = $this->Common->get_details('products',array('product_name'=>$product_name,'category_id'=>$category_id,'quantity'=>$quantity));
+		$gst       = $sgst+$cgst;
+        $gst_value = $price*($gst/100);
+        $mrp_gst   = $price+($price*($gst/100));
+
+        $BrandName   = $this->Common->get_details('brands',array('BrandID'=>$brand_id))->row()->BrandName;
+        $PsearchName = $BrandName." ".$product_name." ".$unit;
+       
+		$pr_check = $this->Common->get_details('products',array('ProductName'=>$product_name,'BrandID'=>$brand_id,'ProductUnit'=>$product_unit));
 		if($pr_check->num_rows()==0)
         {	
             $file     = $_FILES['image'];	       	
@@ -107,31 +113,48 @@ class Products extends CI_Controller {
 			move_uploaded_file($file['tmp_name'], $tar_file);
 
 			$array = [
-						'product_name'        => $product_name,
-						'product_description' => $description,
-						'image'               => $tar_file,
-						'category_id'         => $category_id,
-						'quantity'            => $quantity,
-						'price'               => $price,
-						'featured'            => 'Product',
-						'indication'          => $indication,
-						'b2b_percentage'      => $b2b_percentage,
-						'b2b_price'           => $b2b,      
-						'status'              => 'Active',
-						'timestamp'           => $timestamp
+						'ProductName'          => $product_name,
+						'malayalam_name'       => $malayalam_name,
+						'manglish_name'        => $manglish_name,
+						'ProductUnit'          => $product_unit,
+						'Unit'                 => $unit,
+						'unit1'                => $unit1,
+						'PsearchName'          => $PsearchName,
+						'description'          => $description,
+						'ProductImage'         => $tar_file,
+						'CategoryID'           => $category_id,
+						'BrandID'              => $brand_id,
+						'Subcategory_ID'       => $subcategory_id,
+						'ProductStock'         => $quantity,
+						'ProductMRP'           => $price,
+						'recipe'               => $recipe,
+						'sgst'                 => $sgst,
+						'cgst'                 => $cgst, 
+						'gst'                  => $gst,
+						'gst_value'            => $gst_value,
+						'mrp_gst'              => $mrp_gst,
+						'offer_price'          => '0',
+						'product_type'         => $product_type,
+						'pflag'                => '1',
+						'percentage'           => '0',
+						'manufacturing_date'   => $manufacturing_date,
+						'expiry_date'          => $expiry_date,
+						'batch_number'         => $batch_number,
+						'ProductStatus'        => 'Active',
+						'timestamp'            => $timestamp
 					];
 			if ($product_id=$this->Common->insert('products',$array)) 
-			{
-				$stock_array = [
-                                  'product_id' => $product_id,
-                                  'stock'      => '0'
-				               ];
-                 $this->Common->insert('stock_table',$stock_array);
+			{   
+				$img_array = [
+                 		            'product_id'    => $product_id,
+                 		            'product_image' => $tar_file,
+                 		            'timestamp'     => $timestamp
+                 	               ];
+                $this->Common->insert('product_images',$img_array); 
 
                 $file1 = $_FILES['file-1'];
-				$file2 = $_FILES['file-2'];
-				$file3 = $_FILES['file-3'];
-				
+				$file2 = $_FILES['file-2'];  
+			
                 if ($file1['size'] > 0) 
                  {
                  	$tar       = "uploads/admin/product_images/";
@@ -139,9 +162,9 @@ class Products extends CI_Controller {
 					$tar_file1 = $tar . $rand . basename($file1['name']);
 					move_uploaded_file($file1['tmp_name'], $tar_file1);
                  	$image_array = [
-                 		            'ProductID' => $product_id,
-                 		            'Image'     => $tar_file1,
-                 		            'timestamp' => $timestamp
+                 		            'product_id'    => $product_id,
+                 		            'product_image' => $tar_file1,
+                 		            'timestamp'     => $timestamp
                  	               ];
                  	$this->Common->insert('product_images',$image_array);               
                  }
@@ -153,23 +176,9 @@ class Products extends CI_Controller {
 					$tar_file2 = $tar . $rand . basename($file2['name']);
 					move_uploaded_file($file2['tmp_name'], $tar_file2);
                  	$image_array = [
-                 		            'ProductID' => $product_id,
-                 		            'Image'     => $tar_file2,
-                 		            'timestamp' => $timestamp
-                 	               ];
-                 	$this->Common->insert('product_images',$image_array);               
-                 }
-                 
-                 if ($file3['size'] > 0) 
-                 {
-                 	$tar      = "uploads/admin/product_images/";
-					$rand     = date('Ymd').mt_rand(1001,9999);
-					$tar_file3 = $tar . $rand . basename($file3['name']);
-					move_uploaded_file($file3['tmp_name'], $tar_file3);
-                 	$image_array = [
-                 		            'ProductID' => $product_id,
-                 		            'Image'     => $tar_file3,
-                 		            'timestamp' => $timestamp
+                 		            'product_id'    => $product_id,
+                 		            'product_image' => $tar_file2,
+                 		            'timestamp'     => $timestamp
                  	               ];
                  	$this->Common->insert('product_images',$image_array);               
                  }
@@ -200,28 +209,48 @@ class Products extends CI_Controller {
 
 	public function update()
 	{
-		$product_id   = $this->security->xss_clean($this->input->post('product_id'));
-        $product_name = $this->security->xss_clean($this->input->post('name'));
-		$category_id  = $this->security->xss_clean($this->input->post('category_id'));
-		$quantity     = $this->security->xss_clean($this->input->post('quantity'));
-		$price        = $this->security->xss_clean($this->input->post('price'));
-		$b2b_percentage = $this->security->xss_clean($this->input->post('b2b_percentage'));
-		$b2b_price    = $this->security->xss_clean($this->input->post('b2b_price'));
-		$description  = $this->security->xss_clean($this->input->post('description'));
-		$indication   = $this->security->xss_clean($this->input->post('indication'));
-		$status       = $this->security->xss_clean($this->input->post('status'));
+		$product_id      = $this->security->xss_clean($this->input->post('product_id'));
+        $product_name    = $this->security->xss_clean($this->input->post('ProductName'));
+		$malayalam_name  = $this->security->xss_clean($this->input->post('ProductName1'));
+		$manglish_name   = $this->security->xss_clean($this->input->post('manglish_name'));
+		$category_id     = $this->security->xss_clean($this->input->post('category_id'));
+		$subcategory_id  = $this->security->xss_clean($this->input->post('subcategory_id'));
+		$brand_id        = $this->security->xss_clean($this->input->post('brand_id'));
+		$product_type    = $this->security->xss_clean($this->input->post('product_type'));
+		$quantity        = $this->security->xss_clean($this->input->post('Quantity'));
+		$price           = $this->security->xss_clean($this->input->post('price'));
+		$sgst            = $this->security->xss_clean($this->input->post('sgst'));
+		$cgst            = $this->security->xss_clean($this->input->post('cgst'));
+		$unit            = $this->security->xss_clean($this->input->post('Unit'));
+		$unit1           = $this->security->xss_clean($this->input->post('Unit1'));
+		$product_unit    = $unit.$unit1;
+		// $netweight       = $this->security->xss_clean($this->input->post('Netweight'));
+		$manufacturing_date  = $this->security->xss_clean($this->input->post('manufacturing_date'));
+		$expiry_date     = $this->security->xss_clean($this->input->post('expiry_date'));
+		$batch_number    = $this->security->xss_clean($this->input->post('batch_number'));
+		$description     = $this->security->xss_clean($this->input->post('description'));
+		$recipe          = $this->security->xss_clean($this->input->post('recipe'));
+        $status          = $this->security->xss_clean($this->input->post('status'));
 
-		$check       = $this->Common->get_details('products',array('product_name'=>$product_name,'category_id'=>$category_id,'quantity'=>$quantity, 'product_id!=' => $product_id))->num_rows();
-		if ($check > 0) {
+		$gst         = $sgst+$cgst;
+        $gst_value   = $price*($gst/100);
+        $mrp_gst     = $price+($price*($gst/100));
+
+        $BrandName   = $this->Common->get_details('brands',array('BrandID'=>$brand_id))->row()->BrandName;
+        $PsearchName = $BrandName." ".$product_name." ".$unit;
+
+		$pr_check = $this->Common->get_details('products',array('ProductName'=>$product_name,'BrandID'=>$brand_id,'ProductUnit'=>$product_unit,'ProductID!=' => $product_id));
+		if($pr_check->num_rows()>0)
+        {	
 			$this->session->set_flashdata('alert_type', 'error');
 			$this->session->set_flashdata('alert_title', 'Failed');
 			$this->session->set_flashdata('alert_message', 'Failed to add products..!');
 
 			redirect('admin/products/edit/'.$product_id);
 		}
-		else {
-				$file     = $_FILES['image'];	       	
-                 
+		else 
+		{
+				$file     = $_FILES['image'];	       	                 
 				if ($file['name'] != '') 
 				{
 					$tar      = "uploads/admin/products/";
@@ -229,35 +258,65 @@ class Products extends CI_Controller {
 					$tar_file = $tar . $rand . basename($file['name']);
 					move_uploaded_file($file['tmp_name'], $tar_file);
                     
-                    $array = [ 
-		                        'product_name'        => $product_name,
-								'product_description' => $description,
-								'image'               => $tar_file,
-								'category_id'         => $category_id,
-								'quantity'            => $quantity,
-								'price'               => $price,
-								'indication'          => $indication,
-								'b2b_percentage'      => $b2b_percentage,
-								'b2b_price'           => $b2b_price,
-								'status'              => $status
-							];	
+                    $array = [
+								'ProductName'          => $product_name,
+								'malayalam_name'       => $malayalam_name,
+								'manglish_name'        => $manglish_name,
+								'ProductUnit'          => $product_unit,
+								'Unit'                 => $unit,
+								'unit1'                => $unit1,
+								'PsearchName'          => $PsearchName,
+								'description'          => $description,
+								'CategoryID'           => $category_id,
+								'BrandID'              => $brand_id,
+								'Subcategory_ID'       => $subcategory_id,
+								'ProductImage'         => $tar_file,
+								'ProductStock'         => $quantity,
+								'ProductMRP'           => $price,
+								'recipe'               => $recipe,
+								'sgst'                 => $sgst,
+								'cgst'                 => $cgst, 
+								'gst'                  => $gst,
+								'gst_value'            => $gst_value,
+								'mrp_gst'              => $mrp_gst,
+								'product_type'         => $product_type,
+								'manufacturing_date'   => $manufacturing_date,
+								'expiry_date'          => $expiry_date,
+								'batch_number'         => $batch_number,
+								'ProductStatus'        => $status
+							];
 				}
 				else 
 				{
-				 $array = [ 
-	                        'product_name'        => $product_name,
-							'product_description' => $description,
-							'category_id'         => $category_id,
-							'quantity'            => $quantity,
-							'price'               => $price,
-							'indication'          => $indication,
-							'b2b_percentage'      => $b2b_percentage,
-							'b2b_price'           => $b2b_price,      
-							'status'              => $status
-						];	
+				 $array = [
+							'ProductName'          => $product_name,
+							'malayalam_name'       => $malayalam_name,
+							'manglish_name'        => $manglish_name,
+							'ProductUnit'          => $product_unit,
+							'Unit'                 => $unit,
+							'unit1'                => $unit1,
+							'PsearchName'          => $PsearchName,
+							'description'          => $description,
+							'CategoryID'           => $category_id,
+							'BrandID'              => $brand_id,
+							'Subcategory_ID'       => $subcategory_id,
+							'ProductStock'         => $quantity,
+							'ProductMRP'           => $price,
+							'recipe'               => $recipe,
+							'sgst'                 => $sgst,
+							'cgst'                 => $cgst, 
+							'gst'                  => $gst,
+							'gst_value'            => $gst_value,
+							'mrp_gst'              => $mrp_gst,
+							'product_type'         => $product_type,
+							'manufacturing_date'   => $manufacturing_date,
+							'expiry_date'          => $expiry_date,
+							'batch_number'         => $batch_number,
+							'ProductStatus'        => $status
+						];
 				}
-
-			if ($this->Common->update('product_id',$product_id,'products',$array)) 
+            
+			if ($this->Common->update('ProductID',$product_id,'products',$array)) 
 			{
 				$this->session->set_flashdata('alert_type', 'success');
 				$this->session->set_flashdata('alert_title', 'Success');
@@ -283,72 +342,29 @@ class Products extends CI_Controller {
 		print_r(json_encode($data));
 	}
 
-	public function featured($id)
-	{
-		$array = [
-			       'featured' => 'Featured'
-		         ];
-	
-		if ($this->Common->update('product_id',$id,'products',$array)) {
-			$this->session->set_flashdata('alert_type', 'success');
-			$this->session->set_flashdata('alert_title', 'Success');
-			$this->session->set_flashdata('alert_message', 'Product added to featured successfully..!');
-
-			redirect('admin/products');
-		}
-		else {
-			$this->session->set_flashdata('alert_type', 'error');
-			$this->session->set_flashdata('alert_title', 'Failed');
-			$this->session->set_flashdata('alert_message', 'Failed to add featured..!');
-
-			redirect('admin/products');
-		}
-	}
-
-	public function featured_remove($id)
-	{
-		$array = [
-			       'featured' => 'Product'
-		         ];
-	
-		if ($this->Common->update('product_id',$id,'products',$array)) {
-			$this->session->set_flashdata('alert_type', 'success');
-			$this->session->set_flashdata('alert_title', 'Success');
-			$this->session->set_flashdata('alert_message', 'Product removed from featured successfully..!');
-
-			redirect('admin/products');
-		}
-		else {
-			$this->session->set_flashdata('alert_type', 'error');
-			$this->session->set_flashdata('alert_title', 'Failed');
-			$this->session->set_flashdata('alert_message', 'Failed to remove from featured..!');
-
-			redirect('admin/products');
-		}
-	}
-
 	public function view($id)
 	{
-	  $check = $this->Common->get_details('products',array('product_id'=>$id));
+	  $check = $this->Common->get_details('products',array('ProductID'=>$id));
 	  if($check->num_rows()>0)
 	  {
 	  	$product = $check->row();
-	  	$product->categoty = $this->Common->get_details('category',array('category_id'=>$product->category_id))->row()->category_name;
+	  	$product->categoty    = $this->Common->get_details('category',array('Category_Id'=>$product->CategoryID))->row()->Category_Title;
+	  	$product->subcategoty = $this->Common->get_details('subcategory',array('subcategory_id'=>$product->Subcategory_ID))->row()->subcategory_title;
+	  	$product->brand       = $this->Common->get_details('brands',array('BrandID'=>$product->BrandID))->row()->BrandName;
 	  }	
 	  else
 	  {
 	  	$product = '';
 	  }
-
 	  $data['product'] = $product;
 	  $this->load->view('admin/products/details',$data);
  	}
 
  	public function images($id)
 	{
-		$check = $this->Common->get_details('product_images',array('ProductID' => $id));
+		$check = $this->Common->get_details('product_images',array('product_id' => $id));
 		$data['images'] = $check->result();
-		$data['product'] = $this->Common->get_details('products',array('product_id'=>$id))->row()->product_name;
+		$data['product'] = $this->Common->get_details('products',array('ProductID'=>$id))->row()->ProductName;
 		$data['product_id'] = $id;
 		$this->load->view('admin/products/gallery',$data);
 	}
@@ -366,9 +382,9 @@ class Products extends CI_Controller {
 		if(move_uploaded_file($file['tmp_name'], $tar_file))
 		{
 			$array = [
-				'Image'      => $tar_file,
-				'ProductID'  => $product_id,
-				'Timestamp'  => $timestamp
+				'product_image'   => $tar_file,
+				'product_id'      => $product_id,
+				'Timestamp'       => $timestamp
 			];
 			$this->Common->insert('product_images',$array);
 		}
@@ -381,19 +397,30 @@ class Products extends CI_Controller {
 	public function deleteImage()
 	{
 		$id = $_POST['delete_id'];
-		$check = $this->Common->get_details('product_images',array('ImageID'=> $id));
+		$check = $this->Common->get_details('product_images',array('image_id'=> $id));
 		if ($check->num_rows() == 1) 
 		{   
-			$this->Common->delete('product_images',array('ImageID' => $id));
+			$this->Common->delete('product_images',array('image_id' => $id));
 			$this->session->set_flashdata('alert_type', 'success');
 		    $this->session->set_flashdata('alert_title', 'Success');
 		    $this->session->set_flashdata('alert_message', 'Image deleted successfully..!');
-			redirect('admin/products/images/'.$check->row()->ProductID);
+			redirect('admin/products/images/'.$check->row()->product_id);
 		}
 		else 
 		{
 			redirect('admin/products');
 		}
+	}
+
+	public function getSubCategories()
+	{
+		$category = $_POST['cat_id'];
+		$array = $this->Common->get_details('subcategory',array('category_id' => $category , 'Status' => 'Active'))->result();
+		$string = '';
+		foreach ($array as $sub) {
+			$string = $string . "<option value='".$sub->subcategory_id."'>".$sub->subcategory_title."</option>";
+		}
+		print_r(json_encode($string));
 	}
 }
 ?>

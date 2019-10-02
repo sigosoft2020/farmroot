@@ -21,7 +21,6 @@
                   <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button"
                      aria-haspopup="false" aria-expanded="false">
                        <span class="ml-1"><?=$user['name']?><i class="mdi mdi-chevron-down"></i> </span>
-
                   </a>
                   <div class="dropdown-menu dropdown-menu-right profile-dropdown ">
                     <!-- <a href="<?=site_url('admin/settings')?>" class="dropdown-item notify-item">
@@ -110,15 +109,15 @@
                   <li>
                       <a href="#"><i class="fa fa-ticket"></i> <span> Sub Category </span> <span class="menu-arrow"></span></a>
                       <ul class="nav-second-level" aria-expanded="false">
-                          <li><a href="<?=site_url('admin/category/add')?>">Add SubCategory</a></li>
-                          <li><a href="<?=site_url('admin/category')?>">Manage SubCategory</a></li>
+                          <li><a href="<?=site_url('admin/subcategory/add')?>">Add SubCategory</a></li>
+                          <li><a href="<?=site_url('admin/subcategory')?>">Manage SubCategory</a></li>
                       </ul>
                   </li>
                   <li>
                       <a href="#"><i class="fa fa-ticket"></i> <span> Brands </span> <span class="menu-arrow"></span></a>
                       <ul class="nav-second-level" aria-expanded="false">
-                          <li><a href="<?=site_url('admin/category/add')?>">Add Brand</a></li>
-                          <li><a href="<?=site_url('admin/category')?>">Manage Brand</a></li>
+                          <li><a href="<?=site_url('admin/brands/add')?>">Add Brand</a></li>
+                          <li><a href="<?=site_url('admin/brands')?>">Manage Brand</a></li>
                       </ul>
                   </li>
                   <li>

@@ -31,7 +31,7 @@
                           <div class="">
                               <div>
                                   <p class="mb-1 mt-4 font-weight-bold">Category Name</p>
-                                  <input type="text" maxlength="25" name="name" class="form-control" required>
+                                  <input type="text" maxlength="25" name="name" class="form-control" placeholder="Category Name" required>
                               </div>
 
                               <div>
@@ -76,13 +76,13 @@
   $uploadCrop = $('#upload-demo').croppie({
       enableExif: true,
       viewport: {
-          width: 450,
+          width: 250,
           height: 250,
           type: 'rectangle'
       },
       boundary: {
-          width: 600,
-          height: 600
+          width: 400,
+          height: 400
       }
   });
 

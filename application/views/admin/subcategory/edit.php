@@ -14,7 +14,7 @@
             <div class="row">
               <div class="col-12">
                 <div class="page-title-box">
-                  <h4 class="page-title float-left">Edit Category</h4>
+                  <h4 class="page-title float-left">Edit Subcategory</h4>
                   <div class="clearfix"></div>
                 </div>
               </div>
@@ -24,19 +24,28 @@
           <div class="row">
             <div class="col-12">
               <div class="card-box">
-                <form action="<?=site_url('admin/Category/update')?>" method="post">
+                <form action="<?=site_url('admin/Subcategory/update')?>" method="post">
 
-                  <input type="hidden" name="category_id" value="<?=$category->Category_Id?>">
+                  <input type="hidden" name="subcategory_id" value="<?=$subcategory->subcategory_id?>">
                   <div class="row">
                       <div class="col-md-5">
                           <div class="">
+                               <div>
+                                  <p class="mb-1 mt-4 font-weight-bold">Category<span>*</span></p>
+                                  <select id="category" class="form-control" name="category" required>
+                                    <?php foreach ($category as $cat) { ?>
+                                      <option value="<?=$cat->Category_Id?>" <?php if($subcategory->category_id == $cat->Category_Id){ echo "selected"; }?>><?=$cat->Category_Title?></option>
+                                    <?php } ?>
+                                 </select>
+                              </div>    
+
                               <div>
-                                  <p class="mb-1 mt-4 font-weight-bold">Category Name</p>
-                                  <input type="text" maxlength="25" name="name" class="form-control" value="<?=$category->Category_Title?>" required>
+                                  <p class="mb-1 mt-4 font-weight-bold">Subcategory Name</p>
+                                  <input type="text" maxlength="25" name="name" class="form-control" value="<?=$subcategory->subcategory_title?>" required>
                               </div>
 
                               <div>
-                                  <p class="mb-1 mt-4 font-weight-bold">Category Image</p>
+                                  <p class="mb-1 mt-4 font-weight-bold">Subcategory Image</p>
                                   <input type="file" class="form-control" id="upload">
                                   <!-- <input class="sample_input" type="hidden" name="test[image]"> -->
                               </div>
@@ -44,8 +53,8 @@
                               <div>
                                   <p class="mb-1 mt-4 font-weight-bold">Status</p>
                                   <select class="form-control" name="status">
-                                    <option value="Active" <?php if($category->CStatus){?>selected<?php } ?>>Active</option>
-                                    <option value="Blocked" <?php if(!$category->CStatus){?>selected<?php } ?>>Blocked</option>
+                                    <option value="Active" <?php if($subcategory->Status){?>selected<?php } ?>>Active</option>
+                                    <option value="Blocked" <?php if(!$subcategory->Status){?>selected<?php } ?>>Blocked</option>
                                   </select>
                                   <!-- <input class="sample_input" type="hidden" name="test[image]"> -->
                               </div>
@@ -55,7 +64,7 @@
 
                       <div class="col-md-7">
                         <div id="current-image">
-                          <img src="<?=base_url() . $category->CategoryImage?>" height="150px" width="250px">
+                          <img src="<?=base_url() . $subcategory->subcategory_image?>" height="150px" width="250px">
                         </div>
                         <div class="upload-div" style="display:none;">
                           <div id="upload-demo"></div>

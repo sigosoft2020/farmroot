@@ -24,10 +24,10 @@ class Category extends CI_Controller {
 		{
 			$sub_array = array();
 			
-			$sub_array[] = $res->category_name;
+			$sub_array[] = $res->Category_Title;
 			$sub_array[] = '<img src="' . base_url() . $res->CategoryImage . '" height="100px">';
-			$sub_array[] = $res->Cstatus;
-			$sub_array[] = '<a class="btn btn-link" style="font-size:16px;color:blue" href="' . site_url('admin/category/edit/'.$res->category_id) . '"><i class="fa fa-pencil"></i></a>';
+			$sub_array[] = $res->CStatus;
+			$sub_array[] = '<a class="btn btn-link" style="font-size:16px;color:blue" href="' . site_url('admin/category/edit/'.$res->Category_Id) . '"><i class="fa fa-pencil"></i></a>';
 			$data[] = $sub_array;
 		}
 
@@ -46,7 +46,7 @@ class Category extends CI_Controller {
 	}
 	public function edit($id)
 	{
-		$check = $this->Common->get_details('category',array('category_id' => $id));
+		$check = $this->Common->get_details('category',array('Category_Id' => $id));
 		if ($check->num_rows() > 0) {
 			$data['category'] = $check->row();
 			$this->load->view('admin/category/edit',$data);
@@ -64,7 +64,7 @@ class Category extends CI_Controller {
 		$image    = $this->input->post('image');
 		$img      = substr($image, strpos($image, ",") + 1);
 
-		$cat_check = $this->Common->get_details('category',array('category_name'=>$category));
+		$cat_check = $this->Common->get_details('category',array('Category_Title'=>$category));
 		if($cat_check->num_rows()==0)
         {
         	$url      = FCPATH.'uploads/admin/category/';
@@ -74,10 +74,10 @@ class Category extends CI_Controller {
 			file_put_contents($userpath,base64_decode($img));
 
 			$array = [
-						'category_name'  => $category,
-						'CategoryImage' => $path,
-						'Cstatus'        => 'Active',
-						'timestamp'      => $timestamp
+						'Category_Title'  => $category,
+						'CategoryImage'   => $path,
+						'CStatus'         => 'Active',
+						'Timestamp'       => $timestamp
 					];
 			if ($this->Common->insert('category',$array)) {
 				$this->session->set_flashdata('alert_type', 'success');
@@ -107,7 +107,7 @@ class Category extends CI_Controller {
 	{
 		$category_id = $this->input->post('category_id');
 		$category    = $this->security->xss_clean($this->input->post('name'));
-		$check       = $this->Common->get_details('category',array('category_name' => $category , 'category_id!=' => $category_id))->num_rows();
+		$check       = $this->Common->get_details('category',array('Category_Title' => $category , 'Category_Id!=' => $category_id))->num_rows();
 		if ($check > 0) {
 			$this->session->set_flashdata('alert_type', 'error');
 			$this->session->set_flashdata('alert_title', 'Failed');
@@ -134,19 +134,19 @@ class Category extends CI_Controller {
 				unlink($remove_path);
 
 				$array = [
-					'category_name' => $category,
-					'CategoryImage' => $path,
-					'Cstatus'       => $status
+					'Category_Title' => $category,
+					'CategoryImage'  => $path,
+					'CStatus'        => $status
 				];
 			}
 			else {
 				$array = [
-					'category_name' => $category,
-					'Cstatus'       => $status
+					'Category_Title' => $category,
+					'CStatus'       => $status
 				];
 			}
 
-			if ($this->Common->update('category_id',$category_id,'category',$array)) {
+			if ($this->Common->update('Category_Id',$category_id,'category',$array)) {
 				$this->session->set_flashdata('alert_type', 'success');
 				$this->session->set_flashdata('alert_title', 'Success');
 				$this->session->set_flashdata('alert_message', 'Changes made successfully..!');

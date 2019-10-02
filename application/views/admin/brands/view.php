@@ -13,7 +13,7 @@
             <div class="row">
               <div class="col-12">
                 <div class="page-title-box">
-                  <h4 class="page-title float-left">Products</h4>
+                  <h4 class="page-title float-left">Brands</h4>
                   <!-- <ol class="breadcrumb float-right">
                     <button type="button" class="btn btn-gradient btn-rounded waves-light waves-effect w-md">Add amenity</button>
                   </ol> -->
@@ -29,16 +29,10 @@
                   <table id="user_data" class="table table-bordered table-striped">
                     <thead>
                       <tr>
-                        <th width="15%">Image</th>
-                        <th width="30%">Name</th>
-                        <th width="10%">Price</th>
-                        <th width="10%">Category</th>
-                        <th width="10%">Brand</th>
-                         <th width="5%">Weight</th>
-                        <th width="5%">Status</th>
-                        <th width="5%">Images</th>
-                        <th width="5%">View</th>
-                        <th width="5%">Edit</th>
+                        <th width="50%">Brand Name</th>
+                        <th width="30%">Brand Image</th>
+                        <th width="10%">Status</th>
+                        <th width="10%">Edit</th>
                       </tr>
                     </thead>
                   </table>
@@ -62,7 +56,7 @@
         "serverSide":true,
         "order":[],
         "ajax":{
-          url:"<?=site_url('admin/products/get')?>",
+          url:"<?=site_url('admin/brands/get')?>",
           type:"POST"
         },
         "columnDefs":[
@@ -74,32 +68,5 @@
       });
     });
   </script>
-  <script>
-    function del()
-    {
-      if (confirm('Are you sure to delete this banner ?')) {
-        return true;
-      }
-      else {
-        return false;
-      }
-    }
-
-    function edit(id)
-    {
-      $('#category_id').val(id);
-      // alert(id);
-      $.ajax({
-          method: "POST",
-          url: "<?php echo site_url('admin/category/getCategoryById');?>",
-          dataType : "json",
-          data : { id : id },
-          success : function( data ){
-            $('#category').val(data.category_name);
-            $('#edit-category').modal('show');
-            // alert(data);
-          }
-        });
-    }
-  </script>
+  
 </html>

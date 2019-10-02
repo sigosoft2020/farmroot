@@ -14,7 +14,7 @@
             <div class="row">
               <div class="col-12">
                 <div class="page-title-box">
-                  <h4 class="page-title float-left">Edit Category</h4>
+                  <h4 class="page-title float-left">Add Brand</h4>
                   <div class="clearfix"></div>
                 </div>
               </div>
@@ -24,39 +24,26 @@
           <div class="row">
             <div class="col-12">
               <div class="card-box">
-                <form action="<?=site_url('admin/Category/update')?>" method="post">
+                <form action="<?=site_url('admin/brands/addBrand')?>" method="post" id="add-form">
 
-                  <input type="hidden" name="category_id" value="<?=$category->Category_Id?>">
-                  <div class="row">
-                      <div class="col-md-5">
+                   <div class="row">
+                      <div class="col-md-4">
                           <div class="">
                               <div>
-                                  <p class="mb-1 mt-4 font-weight-bold">Category Name</p>
-                                  <input type="text" maxlength="25" name="name" class="form-control" value="<?=$category->Category_Title?>" required>
+                                  <p class="mb-1 mt-4 font-weight-bold">Brand Name</p>
+                                  <input type="text" maxlength="25" name="name" class="form-control" placeholder="Brand Name" required>
                               </div>
 
                               <div>
-                                  <p class="mb-1 mt-4 font-weight-bold">Category Image</p>
+                                  <p class="mb-1 mt-4 font-weight-bold">Brand Image</p>
                                   <input type="file" class="form-control" id="upload">
                                   <!-- <input class="sample_input" type="hidden" name="test[image]"> -->
                               </div>
-
-                              <div>
-                                  <p class="mb-1 mt-4 font-weight-bold">Status</p>
-                                  <select class="form-control" name="status">
-                                    <option value="Active" <?php if($category->CStatus){?>selected<?php } ?>>Active</option>
-                                    <option value="Blocked" <?php if(!$category->CStatus){?>selected<?php } ?>>Blocked</option>
-                                  </select>
-                                  <!-- <input class="sample_input" type="hidden" name="test[image]"> -->
-                              </div>
-
+                              <br><br>
                           </div>
                       </div>
 
-                      <div class="col-md-7">
-                        <div id="current-image">
-                          <img src="<?=base_url() . $category->CategoryImage?>" height="150px" width="250px">
-                        </div>
+                      <div class="col-md-8">
                         <div class="upload-div" style="display:none;">
                           <div id="upload-demo"></div>
                           <div class="col-12 text-center">
@@ -69,7 +56,7 @@
                         <input type="hidden" name="image" id="ameimg" >
                       </div>
                       <div class="col-md-12 mt-4">
-                        <button type="submit" class="btn btn-success btn-rounded waves-light waves-effect w-md pull-right" id="submit-button" style="display:block;">Update</button>
+                        <button type="submit" class="btn btn-success btn-rounded waves-light waves-effect w-md pull-right" id="submit-button" style="display:none;">Add</button>
                       </div>
                   </div>
 
@@ -84,17 +71,13 @@
   </body>
   <?php $this->load->view('admin/includes/scripts.php'); ?>
   <script src="<?=base_url()?>plugins/image-crop/croppie.js"></script>
-  <!-- <script src="<?=base_url()?>plugins/crop/jquery.min.js"></script>
-  <script src="<?=base_url()?>plugins/crop/bootstrap.min.js"></script>
-  <script src="<?=base_url()?>plugins/crop/jquery.imgareaselect.js"></script>
-  <script src="<?=base_url()?>plugins/crop/jquery.awesome-cropper.js"></script> -->
 
   <script type="text/javascript">
   $uploadCrop = $('#upload-demo').croppie({
       enableExif: true,
       viewport: {
           width: 250,
-          height: 150,
+          height: 250,
           type: 'rectangle'
       },
       boundary: {
@@ -110,10 +93,6 @@
     var val = file.type;
     var type = val.substr(val.indexOf("/") + 1);
     if (type == 'png' || type == 'jpg' || type == 'jpeg') {
-
-      $("#current-image").css("display", "none");
-      $("#submit-button").css("display", "none");
-
       $(".upload-div").css("display", "block");
       $("#submit-button").css("display", "none");
       var reader = new FileReader();
@@ -132,8 +111,6 @@
       document.getElementById("upload").value = "";
       $("#upload-result").css("display", "none");
       $("#submit-button").css("display", "none");
-      $("#current-image").css("display", "block");
-      $('#ameimg').val('');
     }
   });
 
@@ -151,6 +128,12 @@
       $("#submit-button").css("display", "block");
       $('#ameimg').val(resp);
     });
+  });
+  
+  $('#add-form').on('submit', function(e){
+    e.preventDefault();
+    $('#submit-button').attr('disabled',true);
+    document.getElementById("add-form").submit();
   });
   </script>
 </html>
