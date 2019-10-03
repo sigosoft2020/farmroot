@@ -147,50 +147,6 @@ class Customer extends CI_Controller {
 	}
 
 
-	public function disable($id)
-	{
-			$array = [
-				       'Status' => 'Blocked'
-			         ];
-		
-			if ($this->Common->update('user_id',$id,'users',$array)) 
-			{
-				$this->session->set_flashdata('alert_type', 'success');
-				$this->session->set_flashdata('alert_title', 'Success');
-				$this->session->set_flashdata('alert_message', 'User blocked successfully..!');
-
-				redirect('admin/users');
-			}
-			else 
-			{
-				$this->session->set_flashdata('alert_type', 'error');
-				$this->session->set_flashdata('alert_title', 'Failed');
-				$this->session->set_flashdata('alert_message', 'Failed to block user..!');
-
-				redirect('admin/users');
-			}
-	}
-
-	public function enable($id)
-	{
-			$array = [
-				       'Status' => 'Active'
-			         ];
-		
-			if ($this->Common->update('user_id',$id,'users',$array)) {
-				$this->session->set_flashdata('alert_type', 'success');
-				$this->session->set_flashdata('alert_title', 'Success');
-				$this->session->set_flashdata('alert_message', 'Users activated successfully..!');
-
-				redirect('admin/users');
-			}
-			else {
-				$this->session->set_flashdata('alert_type', 'error');
-				$this->session->set_flashdata('alert_title', 'Failed');
-				$this->session->set_flashdata('alert_message', 'Failed to activate user..!');
-
-				redirect('admin/users');
-			}
-	}
+	
 }
 ?>
