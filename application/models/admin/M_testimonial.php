@@ -9,7 +9,7 @@ class M_testimonial extends CI_Model
   function make_query(){
     $table = "testimonial";
     $select_column = array("id","name","position","description","image","status");
-    $order_column = array(null,"name",null,null);
+    $order_column = array(null,"name",null,null,null,null);
 
     $this->db->select($select_column);
     $this->db->from($table);

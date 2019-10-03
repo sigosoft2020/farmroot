@@ -47,8 +47,8 @@
                                 <div>
                                   <p class="mb-1 mt-4 font-weight-bold">Status</p>
                                   <select class="form-control" name="status">
-                                    <option value="Active" <?php if($testimonial->status){?>selected<?php } ?>>Active</option>
-                                    <option value="Blocked" <?php if(!$testimonial->status){?>selected<?php } ?>>Blocked</option>
+                                    <option value="Active" <?php if($testimonial->status =='Active'){?>selected<?php } ?>>Active</option>
+                                    <option value="Blocked" <?php if($testimonial->status=='Blocked'){?>selected<?php } ?>>Blocked</option>
                                   </select>
                                   <!-- <input class="sample_input" type="hidden" name="test[image]"> -->
                               </div>
@@ -65,7 +65,7 @@
 
                       <div class="col-md-8">
                         <div id="current-image">
-                          <img src="<?=base_url() . $testimonial->image?>" height="250px" width="450px">
+                          <img src="<?=base_url() . $testimonial->image?>" height="250px" width="250px">
                         </div>
                         <div class="upload-div" style="display:none;">
                           <div id="upload-demo"></div>
@@ -99,13 +99,13 @@
   $uploadCrop = $('#upload-demo').croppie({
       enableExif: true,
       viewport: {
-          width: 450,
+          width: 250,
           height: 250,
           type: 'rectangle'
       },
       boundary: {
-          width: 600,
-          height: 600
+          width: 400,
+          height: 400
       }
   });
 
