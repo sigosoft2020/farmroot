@@ -93,6 +93,7 @@ class Voucher extends CI_Controller {
 						'minimum_cart_value' => $cart_value,
 						'str_time_from'   => $t1,
 						'str_time_to'     => $t2,
+						'timestamp'       => $timestamp,
 						'status'          => 'Active'
 					];
 			if ($this->Common->insert('voucher',$array)) {
