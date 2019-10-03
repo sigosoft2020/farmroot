@@ -144,8 +144,8 @@
                   <li>
                       <a href="#"><i class="fa fa-file-excel-o"></i> <span> Delivery Slot </span> <span class="menu-arrow"></span></a>
                       <ul class="nav-second-level" aria-expanded="false">
-                          <li><a href="<?=site_url('admin//add')?>">Add Delivery slot</a></li>category
-                          <li><a href="<?=site_url('admin/category')?>">Manage Delivery slot</a></li>
+                          <li><a href="<?=site_url('admin/delivery_slot/add')?>">Add Delivery slot</a></li>
+                          <li><a href="<?=site_url('admin/delivery_slot')?>">Manage Delivery slot</a></li>
                       </ul>
                   </li>
                   <li>
