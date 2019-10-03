@@ -24,17 +24,24 @@ class Vendor extends CI_Controller {
 		{
 			$sub_array = array();
 			
-			$sub_array[] = $res->vendor_name;
-			$sub_array[] = $res->status;
-			$sub_array[] = '<button type="button" class="btn btn-link" style="font-size:20px;color:blue" onclick="edit(' . $res->vender_id . ')"><i class="fa fa-pencil"></i></button>';
+			$sub_array[] = $res->VendorName;
+			$sub_array[] = $res->Phone;
+			$sub_array[] = $res->Email;
+			$sub_array[] = $res->GSTNo;
+			$sub_array[] = $res->Address;
+			$sub_array[] = $res->City;
+			$sub_array[] = $res->State;
+			$sub_array[] = $res->PINCode;
+			$sub_array[] = $res->StatusVendor;
+			$sub_array[] = '<button type="button" class="btn btn-link" style="font-size:20px;color:blue" onclick="edit(' . $res->VendorID . ')"><i class="fa fa-pencil"></i></button>';
 
-			if($res->status == 'Active') 
+			if($res->StatusVendor == 'Active') 
 			{
-             $action  = '<a class="btn btn-link" style="font-size:16px;color:red" href="' . site_url('admin/vendor/disable/'.$res->vender_id) . '"  onclick="return block()">Block</i></a>';
+             $action  = '<a class="btn btn-link" style="font-size:16px;color:red" href="' . site_url('admin/vendor/disable/'.$res->VendorID) . '"  onclick="return block()">Block</i></a>';
             } 
             else
             {
-             $action = '<a class="btn btn-link" style="font-size:16px;color:orange" href="' . site_url('admin/vendor/enable/'.$res->vender_id) . '"  onclick="return block()">Enable</a>';
+             $action = '<a class="btn btn-link" style="font-size:16px;color:orange" href="' . site_url('admin/vendor/enable/'.$res->VendorID) . '"  onclick="return block()">Enable</a>';
             }
             
             $sub_array[]    = $action; 
@@ -72,15 +79,29 @@ class Vendor extends CI_Controller {
         $timestamp = date('Y-m-d H:i:s');
 
 		$vendor_name = $this->security->xss_clean($this->input->post('vendor_name'));
-
-		$vendor_check = $this->Common->get_details('vendor_details',array('vendor_name'=>$vendor_name));
+		$Phone       = $this->security->xss_clean($this->input->post('Phone'));
+		$Email       = $this->security->xss_clean($this->input->post('Email'));
+		$GSTNo       = $this->security->xss_clean($this->input->post('GSTNo'));
+		$Address     = $this->security->xss_clean($this->input->post('Address'));
+		$City        = $this->security->xss_clean($this->input->post('City'));
+		$PINCode     = $this->security->xss_clean($this->input->post('PINCode'));
+		$State       = $this->security->xss_clean($this->input->post('State'));
+		
+		$vendor_check = $this->Common->get_details('vendors',array('VendorName'=>$vendor_name,'Phone'=>$Phone,'GSTNo'=>$GSTNo));
 		if($vendor_check->num_rows()==0)
         {
 			$array = [
-						'vendor_name'    => $vendor_name,
-						'status'         => 'Active'
+						'VendorName'  => $vendor_name,
+						'Phone'       => $Phone,
+						'Email'       => $Email,
+						'GSTNo'       => $GSTNo,
+						'Address'     => $Address,
+						'City'        => $City,
+						'State'       => $State,
+						'PINCode'     => $PINCode,
+						'StatusVendor'=> 'Active'
 					];
-			if ($this->Common->insert('vendor_details',$array)) {
+			if ($this->Common->insert('vendors',$array)) {
 				$this->session->set_flashdata('alert_type', 'success');
 				$this->session->set_flashdata('alert_title', 'Success');
 				$this->session->set_flashdata('alert_message', 'New vendor added..!');
@@ -107,8 +128,15 @@ class Vendor extends CI_Controller {
 	public function update()
 	{
 		$vendor_id   = $this->input->post('vendor_id');
-		$vendor      = $this->security->xss_clean($this->input->post('vendor'));
-		$check       = $this->Common->get_details('vendor_details',array('vendor_name' => $vendor , 'vender_id!=' => $vendor_id))->num_rows();
+		$vendor_name = $this->security->xss_clean($this->input->post('vendor'));
+		$Phone       = $this->security->xss_clean($this->input->post('Phone'));
+		$Email       = $this->security->xss_clean($this->input->post('Email'));
+		$GSTNo       = $this->security->xss_clean($this->input->post('GSTNo'));
+		$Address     = $this->security->xss_clean($this->input->post('Address'));
+		$City        = $this->security->xss_clean($this->input->post('City'));
+		$PINCode     = $this->security->xss_clean($this->input->post('PINCode'));
+		$State       = $this->security->xss_clean($this->input->post('State'));
+		$check       = $this->Common->get_details('vendors',array('VendorName' => $vendor_name ,'Phone'=>$Phone,'VendorID!=' => $vendor_id))->num_rows();
 		if ($check > 0) 
 		{
 			$this->session->set_flashdata('alert_type', 'error');
@@ -120,10 +148,17 @@ class Vendor extends CI_Controller {
 		else 
 		{
 			$array = [
-				       'vendor_name' => $vendor
+				        'VendorName'  => $vendor_name,
+						'Phone'       => $Phone,
+						'Email'       => $Email,
+						'GSTNo'       => $GSTNo,
+						'Address'     => $Address,
+						'City'        => $City,
+						'State'       => $State,
+						'PINCode'     => $PINCode,
 			         ];
 		
-			if ($this->Common->update('vender_id',$vendor_id,'vendor_details',$array)) {
+			if ($this->Common->update('VendorID',$vendor_id,'vendors',$array)) {
 				$this->session->set_flashdata('alert_type', 'success');
 				$this->session->set_flashdata('alert_title', 'Success');
 				$this->session->set_flashdata('alert_message', 'Changes made successfully..!');
@@ -143,10 +178,10 @@ class Vendor extends CI_Controller {
 	public function disable($id)
 	{
 			$array = [
-				       'status' => 'Disabled'
+				       'StatusVendor' => 'Blocked'
 			         ];
 		
-			if ($this->Common->update('vender_id',$id,'vendor_details',$array)) {
+			if ($this->Common->update('VendorID',$id,'vendors',$array)) {
 				$this->session->set_flashdata('alert_type', 'success');
 				$this->session->set_flashdata('alert_title', 'Success');
 				$this->session->set_flashdata('alert_message', 'Vendor blocked successfully..!');
@@ -165,10 +200,10 @@ class Vendor extends CI_Controller {
 	public function enable($id)
 	{
 			$array = [
-				       'status' => 'Active'
+				       'StatusVendor' => 'Active'
 			         ];
 		
-			if ($this->Common->update('vender_id',$id,'vendor_details',$array)) {
+			if ($this->Common->update('VendorID',$id,'vendors',$array)) {
 				$this->session->set_flashdata('alert_type', 'success');
 				$this->session->set_flashdata('alert_title', 'Success');
 				$this->session->set_flashdata('alert_message', 'Vendor activated successfully..!');
@@ -188,7 +223,7 @@ class Vendor extends CI_Controller {
 	public function getVendorById()
 	{
 		$id = $_POST['id'];
-		$data = $this->Common->get_details('vendor_details',array('vender_id' => $id))->row();
+		$data = $this->Common->get_details('vendors',array('VendorID' => $id))->row();
 		print_r(json_encode($data));
 	}
 }

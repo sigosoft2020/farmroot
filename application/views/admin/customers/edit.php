@@ -14,7 +14,7 @@
             <div class="row">
               <div class="col-12">
                 <div class="page-title-box">
-                  <h4 class="page-title float-left">Edit User</h4>
+                  <h4 class="page-title float-left">Edit Customer</h4>
                   <div class="clearfix"></div>
                 </div>
               </div>
@@ -24,40 +24,37 @@
           <div class="row">
             <div class="col-12">
               <div class="card-box">
-                <form action="<?=site_url('admin/Users/update')?>" method="post" id="add-form" enctype="multipart/form-data">
+                <form action="<?=site_url('admin/customer/update')?>" method="post" id="add-form" enctype="multipart/form-data">
 
                    <div class="row">
                       <div class="col-md-6">
                           <div class="">
-                              <input type="hidden" name="staff_id" value="<?php echo $staff->staff_id;?>">
+                              <input type="hidden" name="customer_id" value="<?php echo $customer->user_id;?>">
                               <div>
                                   <p class="mb-1 mt-4 font-weight-bold">Name<span>*</span></p>
-                                  <input type="text" maxlength="25" name="name" class="form-control" placeholder="Name" value="<?php echo @$staff->name;?>" required>
+                                  <input type="text" maxlength="25" name="name" class="form-control" placeholder="Name" value="<?php echo @$customer->name;?>" required>
                               </div>
 
                               <div>
                                   <p class="mb-1 mt-4 font-weight-bold">Mobile<span>*</span></p>
-                                  <input type="text" maxlength="10" name="mobile" class="form-control" pattern="[6-9]{1}[0-9]{9}"  placeholder="Phone" title="Enter valid phone number" value="<?php echo @$staff->mobile;?>" required>
+                                  <input type="text" maxlength="13" name="mobile" class="form-control" placeholder="Mobile" value="<?php echo @$customer->phone;?>" required>
                               </div>
 
                               <div>
-                                  <p class="mb-1 mt-4 font-weight-bold">User Name<span>*</span></p>
-                                  <input type="text" name="user_name" placeholder="User Name" class="form-control" value="<?php echo @$staff->username;?>" required>
+                                  <p class="mb-1 mt-4 font-weight-bold">Email<span>*</span></p>
+                                  <input type="email" name="email" placeholder="Email" class="form-control" value="<?php echo @$customer->email;?>" required>
                               </div>
-
+                              
                               <div>
-                                  <p class="mb-1 mt-4 font-weight-bold">User Type<span>*</span></p>
-                                  <select name="user_type" class="form-control" required>
-                                     <option value="Office" <?php if($staff->user_type == 'Office'){?>selected<?php } ?> >Office Staff</option>
-                                    <option value="Delivery" <?php if($staff->user_type == 'Delivery'){?>selected<?php } ?> >Delivery Staff</option>
-                                  </select>
+                                  <p class="mb-1 mt-4 font-weight-bold">Address<span>*</span></p>
+                                  <textarea type="text" name="address" placeholder="Address" class="form-control" rows="4" required><?php echo @$customer->address;?></textarea> 
                               </div>
 
                               <div>
                                   <p class="mb-1 mt-4 font-weight-bold">Status<span>*</span></p>
                                   <select  name="status" class="form-control">
-                                    <option value="Active" <?php if($staff->status == 'Active'){?>selected<?php } ?> >Active</option>
-                                    <option value="Blocked" <?php if($staff->status == 'Blocked'){?>selected<?php } ?> >Blocked</option>
+                                    <option value="Active" <?php if($customer->status == 'Active'){?>selected<?php } ?> >Active</option>
+                                    <option value="Blocked" <?php if($customer->status == 'Blocked'){?>selected<?php } ?> >Blocked</option>
                                   </select>
                               </div>
                           </div>

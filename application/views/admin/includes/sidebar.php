@@ -123,15 +123,15 @@
                   <li>
                       <a href="#"><i class="fa fa-users"></i> <span> Vendors </span> <span class="menu-arrow"></span></a>
                       <ul class="nav-second-level" aria-expanded="false">
-                          <li><a href="<?=site_url('admin/category/add')?>">Add Vendor</a></li>
-                          <li><a href="<?=site_url('admin/category')?>">Manage Vendor</a></li>
+                          <li><a href="<?=site_url('admin/vendor/add')?>">Add Vendor</a></li>
+                          <li><a href="<?=site_url('admin/vendor')?>">Manage Vendor</a></li>
                       </ul>
                   </li>
                   <li>
                       <a href="#"><i class="fa fa-user"></i> <span> Customers </span> <span class="menu-arrow"></span></a>
                       <ul class="nav-second-level" aria-expanded="false">
-                          <li><a href="<?=site_url('admin/category/add')?>">Add Customer</a></li>
-                          <li><a href="<?=site_url('admin/category')?>">Manage Customer</a></li>
+                          <li><a href="<?=site_url('admin/customer/add')?>">Add Customer</a></li>
+                          <li><a href="<?=site_url('admin/customer')?>">Manage Customer</a></li>
                       </ul>
                   </li>
                   <li>

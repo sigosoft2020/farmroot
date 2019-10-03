@@ -1,26 +1,27 @@
 <?php
 
-class M_vendor extends CI_Model
+class M_customer extends CI_Model
 {
   function __construct()
   {
     $this->load->database();
   }
-  function make_query(){
-    $table = "vendors";
-    $select_column = array("VendorID","VendorName","Phone","Email","GSTNo","Address","City","State","PINCode","StatusVendor");
-    $order_column = array(null,"VendorName",null,null);
+  function make_query()
+  {
+    $table = "users";
+    $select_column = array("user_id","name","email","phone","address","status");
+    $order_column = array(null,"name",null,null,null,null);
 
     $this->db->select($select_column);
     $this->db->from($table);
     if (isset($_POST["search"]["value"])) {
-      $this->db->like("VendorName",$_POST["search"]["value"]);
+      $this->db->like("name",$_POST["search"]["value"]);
     }
     if (isset($_POST["order"])) {
       $this->db->order_by($_POST['order']['0']['column'],$_POST['order']['0']['dir']);
     }
     else {
-      $this->db->order_by("VendorID","desc");
+      $this->db->order_by("user_id","desc");
     }
   }
   function make_datatables()
@@ -41,7 +42,7 @@ class M_vendor extends CI_Model
   function get_all_data()
   {
     $this->db->select("*");
-    $this->db->from("vendors");
+    $this->db->from("users");
     return $this->db->count_all_results();
   }
 }

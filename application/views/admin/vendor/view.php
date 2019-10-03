@@ -29,10 +29,17 @@
                   <table id="user_data" class="table table-bordered table-striped">
                     <thead>
                       <tr>
-                        <th width="50%">Vendor name</th>
-                        <th width="20%">Status</th>
-                        <th width="10%">Edit</th>
-                        <th width="20%">Block/Enable</th>
+                        <th width="15%">Vendor name</th>
+                        <th width="10%">Phone</th>
+                        <th width="10%">Email</th>
+                        <th width="10%">GST No</th>
+                        <th width="20%">Address</th>
+                        <th width="10%">City</th>
+                        <th width="10%">State</th>
+                        <th width="10%">PIN Code</th>
+                        <th width="5%">Status</th>
+                        <th width="5%">Edit</th>
+                        <th width="5%">Block/Enable</th>
                       </tr>
                     </thead>
                   </table>
@@ -56,6 +63,55 @@
                               <div class="col-12">
                                   <label for="select">Vendor Name</label>
                                   <input type="text" name="vendor_name" id="vendor_name" class="form-control" required>
+                              </div>
+                          </div>
+
+                           <div class="form-group m-b-25">
+                              <div class="col-12">
+                                  <label for="select">Phone</label>
+                                  <input type="text" id="Phone" name="Phone" pattern="[6-9]{1}[0-9]{9}"  placeholder="Phone" title="Enter valid phone number" maxlength="10" class="form-control" required>
+                              </div>
+                          </div>
+
+                          <div class="form-group m-b-25">
+                              <div class="col-12">
+                                  <label for="select">Email</label>
+                                  <input type="email" id="Email" name="Email" placeholder="Email" class="form-control" required>
+                              </div>
+                          </div>
+
+                          <div class="form-group m-b-25">
+                              <div class="col-12">
+                                  <label for="select">GST Number</label>
+                                  <input type="text" id="GSTNo" name="GSTNo" placeholder="GST NO" class="form-control" required>
+                              </div>
+                          </div>
+                          
+                          <div class="form-group m-b-25">
+                              <div class="col-12">
+                                  <label for="select">Address</label>
+                                  <textarea id="Address" required="required" name="Address" class="form-control" rows="5"></textarea>
+                              </div>
+                          </div>
+
+                          <div class="form-group m-b-25">
+                              <div class="col-12">
+                                  <label for="select">City</label>
+                                  <input type="text" id="City" name="City" placeholder="City" class="form-control" required>
+                              </div>
+                          </div>
+
+                          <div class="form-group m-b-25">
+                              <div class="col-12">
+                                  <label for="select">Pin code</label>
+                                  <input  type="number" id="PINCode" name="PINCode" placeholder="Pin code" min="0" class="form-control" required>
+                              </div>
+                          </div>
+
+                          <div class="form-group m-b-25">
+                              <div class="col-12">
+                                  <label for="select">State</label>
+                                  <input type="text" id="State" name="State" placeholder="State" class="form-control" required>
                               </div>
                           </div>
                         
@@ -85,7 +141,56 @@
                           <div class="form-group m-b-25">
                               <div class="col-12">
                                   <label for="select">Vendor Name</label>
-                                  <input type="text" name="vendor" id="vendor" class="form-control" required>
+                                  <input type="text" name="vendor" id="name" class="form-control" required>
+                              </div>
+                          </div>
+
+                           <div class="form-group m-b-25">
+                              <div class="col-12">
+                                  <label for="select">Phone</label>
+                                  <input type="text" id="phone" name="Phone" pattern="[6-9]{1}[0-9]{9}"  placeholder="Phone" title="Enter valid phone number" maxlength="10" class="form-control" required>
+                              </div>
+                          </div>
+
+                          <div class="form-group m-b-25">
+                              <div class="col-12">
+                                  <label for="select">Email</label>
+                                  <input type="email" id="email" name="Email" placeholder="Email" class="form-control" required>
+                              </div>
+                          </div>
+
+                          <div class="form-group m-b-25">
+                              <div class="col-12">
+                                  <label for="select">GST Number</label>
+                                  <input type="text" id="gstno" name="GSTNo" placeholder="GST NO" class="form-control" required>
+                              </div>
+                          </div>
+                          
+                          <div class="form-group m-b-25">
+                              <div class="col-12">
+                                  <label for="select">Address</label>
+                                  <textarea id="address" required="required" name="Address" class="form-control" rows="5"></textarea>
+                              </div>
+                          </div>
+
+                          <div class="form-group m-b-25">
+                              <div class="col-12">
+                                  <label for="select">City</label>
+                                  <input type="text" id="city" name="City" placeholder="City" class="form-control" required>
+                              </div>
+                          </div>
+
+                          <div class="form-group m-b-25">
+                              <div class="col-12">
+                                  <label for="select">Pin code</label>
+                                  <input  type="number" id="pincode" name="PINCode" placeholder="Pin code" min="0" class="form-control" required>
+                              </div>
+                          </div>
+
+                          <div class="form-group m-b-25">
+                              <div class="col-12">
+                                  <label for="select">State</label>
+                                  <input type="text" id="state" name="State" placeholder="State" class="form-control" required>
                               </div>
                           </div>
                         
@@ -145,7 +250,14 @@
           dataType : "json",
           data : { id : id },
           success : function( data ){
-            $('#vendor').val(data.vendor_name);
+            $('#name').val(data.VendorName);
+            $('#phone').val(data.Phone);
+            $('#email').val(data.Email);
+            $('#gstno').val(data.GSTNo);
+            $('#address').val(data.Address);
+            $('#city').val(data.City);  
+            $('#state').val(data.State);
+            $('#pincode').val(data.PINCode);  
             $('#edit-vendor').modal('show');
             // alert(data);
           }
