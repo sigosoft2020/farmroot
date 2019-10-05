@@ -349,7 +349,14 @@ class Products extends CI_Controller {
 	  {
 	  	$product = $check->row();
 	  	$product->categoty    = $this->Common->get_details('category',array('Category_Id'=>$product->CategoryID))->row()->Category_Title;
-	  	$product->subcategoty = $this->Common->get_details('subcategory',array('subcategory_id'=>$product->Subcategory_ID))->row()->subcategory_title;
+	  	if($product->Subcategory_ID!='')
+	  	{
+	  	  $product->subcategoty = $this->Common->get_details('subcategory',array('subcategory_id'=>$product->Subcategory_ID))->row()->subcategory_title;	
+	  	}
+	  	else
+	  	{
+	  	  $product->subcategoty = '';	
+	  	}
 	  	$product->brand       = $this->Common->get_details('brands',array('BrandID'=>$product->BrandID))->row()->BrandName;
 	  }	
 	  else

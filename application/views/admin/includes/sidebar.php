@@ -151,8 +151,9 @@
                   <li>
                       <a href="#"><i class="fa fa-book"></i> <span> Expense </span> <span class="menu-arrow"></span></a>
                       <ul class="nav-second-level" aria-expanded="false">
-                          <li><a href="<?=site_url('admin/stock')?>">Add Expense</a></li>
-                          <li><a href="<?=site_url('admin/stock/history')?>">Manage Expense</a></li>
+                          <li><a href="<?=site_url('admin/expense/category')?>">Expense Category</a></li>
+                          <li><a href="<?=site_url('admin/expense/add')?>">Add Expense</a></li>
+                          <li><a href="<?=site_url('admin/expense')?>">Manage Expense</a></li>
                       </ul>
                   </li>
                   <li>

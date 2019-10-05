@@ -49,6 +49,7 @@ class Banner extends CI_Controller {
 		$type      = $this->security->xss_clean($this->input->post('slt'));
         $data      = $this->security->xss_clean($this->input->post('data'));
         $position  = $this->security->xss_clean($this->input->post('position'));
+        $img_url   = $this->security->xss_clean($this->input->post('image_url'));
 		if($type=='0')
 		{
 		    $selt = "category";
@@ -71,6 +72,7 @@ class Banner extends CI_Controller {
 					'item'       => $selt,
 					'OfferImage' => $path,
 					'item_id'    => $data,
+					'url'        => $img_url,
 					'position'   => $position,
 					'Timestamp'  => $timestamp
 		        ];
@@ -119,21 +121,22 @@ class Banner extends CI_Controller {
 	{
 		$id = $_POST['cat_id'];
           
-        if($id =='0')
+        if($id =='1')
         {
-			$array = $this->Common->get_details('category',array('Cstatus' =>'Active'))->result();
+        	$array = $this->Common->get_details('products',array('ProductStatus' => 'Active'))->result();
 			$string = '';
 			foreach ($array as $list) {
-				$string = $string . "<option value='".$list->category_id."'>".$list->category_name."</option>";
+				$string = $string . "<option value='".$list->ProductID."'>".$list->ProductName."</option>";
 			}
 			print_r(json_encode($string));
+			
 		}
 		else
 		{
-			$array = $this->Common->get_details('products',array('status' => 'Active'))->result();
+			$array = $this->Common->get_details('category',array('Cstatus' =>'Active'))->result();
 			$string = '';
 			foreach ($array as $list) {
-				$string = $string . "<option value='".$list->product_id."'>".$list->product_name."</option>";
+				$string = $string . "<option value='".$list->Category_Id."'>".$list->Category_Title."</option>";
 			}
 			print_r(json_encode($string));
 		}	

@@ -33,9 +33,8 @@
                                   <p class="mb-1 mt-4 font-weight-bold">Select Item</p>
                                    <select name="slt" id="slt" class="form-control" >
                                       <option value="">---Select Item---</option> 
-                                      <option value="0">Category</option> 
                                       <option value="1">Product</option> 
-                                  </select> 
+                                      <option value="0">Category</option>                    </select> 
                               </div>
 
                               <div>
@@ -60,6 +59,11 @@
                                       <option  value="9">9</option>
                                       <option  value="10">10</option>
                                     </select>
+                              </div>
+
+                              <div>
+                                  <p class="mb-1 mt-4 font-weight-bold">Image URL</p>
+                                   <input type="text" name="image_url" id="image_url" placeholder="Image URL" class="form-control" required>
                               </div>
                               
                                <div>
@@ -109,8 +113,8 @@
           type: 'rectangle'
       },
       boundary: {
-          width: 600,
-          height: 600
+          width: 500,
+          height: 500
       }
   });
 
