@@ -226,9 +226,9 @@
                   <li>
                       <a href="#"><i class="fa fa-bell"></i> <span> Blog </span> <span class="menu-arrow"></span></a>
                       <ul class="nav-second-level" aria-expanded="false">
-                          <li><a href="<?=site_url('admin/wholesaler/request')?>"> Write Blog</a></li>
-                          <li><a href="<?=site_url('admin/wholesaler')?>">Manage Blog</a></li>
-                          <li><a href="<?=site_url('admin/wholesaler')?>">Manage Blog Category</a></li>
+                          <li><a href="<?=site_url('admin/blog/add')?>"> Write Blog</a></li>
+                          <li><a href="<?=site_url('admin/blog')?>">Manage Blog</a></li>
+                          <li><a href="<?=site_url('admin/blog/category')?>">Manage Blog Category</a></li>
                       </ul>
                   </li>
                    <li>

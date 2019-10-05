@@ -1,6 +1,6 @@
 <?php
 
-class M_expense extends CI_Model
+class M_blog extends CI_Model
 {
   function __construct()
   {
@@ -8,20 +8,20 @@ class M_expense extends CI_Model
   }
   function make_query()
   {
-    $table = " expense_table";
-    $select_column = array("exp_id","ExpenseName","expense_category_id","Amount","expense_category_name","Description","EDate");
-    $order_column = array(null,"ExpenseName",null,null,null,null,null);
+    $table = "blog";
+    $select_column = array("blog_id","blog_name","short_description","long_description","blog_image","blog_cat_id","status");
+    $order_column = array(null,"blog_name",null,null,null,null,null);
 
     $this->db->select($select_column);
     $this->db->from($table);
     if (isset($_POST["search"]["value"])) {
-      $this->db->like("ExpenseName",$_POST["search"]["value"]);
+      $this->db->like("blog_name",$_POST["search"]["value"]);
     }
     if (isset($_POST["order"])) {
       $this->db->order_by($_POST['order']['0']['column'],$_POST['order']['0']['dir']);
     }
     else {
-      $this->db->order_by("exp_id","desc");
+      $this->db->order_by("blog_id","desc");
     }
   }
   function make_datatables()
@@ -42,7 +42,7 @@ class M_expense extends CI_Model
   function get_all_data()
   {
     $this->db->select("*");
-    $this->db->from("expense_table");
+    $this->db->from("blog");
     return $this->db->count_all_results();
   }
 }
