@@ -180,8 +180,8 @@
                   <li>
                       <a href="#"><i class="fa fa-quote-left"></i> <span> Delivery Locations </span> <span class="menu-arrow"></span></a>
                       <ul class="nav-second-level" aria-expanded="false">
-                          <li><a href="<?=site_url('admin/testimonial/add')?>">Create Delivery location</a></li>
-                          <li><a href="<?=site_url('admin/testimonial')?>">Manage Delivery location</a></li>
+                          <li><a href="<?=site_url('admin/delivery_location/add')?>">Create Delivery location</a></li>
+                          <li><a href="<?=site_url('admin/delivery_location')?>">Manage Delivery location</a></li>
                       </ul>
                   </li>
                   <li>
