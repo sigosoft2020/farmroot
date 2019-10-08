@@ -7,7 +7,6 @@ class Stock extends CI_Controller {
 			parent::__construct();
 			$this->load->helper('url');
 			$this->load->model('admin/M_stock','stock');
-			$this->load->model('admin/Stock_history','history');
 			$this->load->model('Common');
 			if (!admin()) {
 				redirect('app');
@@ -15,8 +14,7 @@ class Stock extends CI_Controller {
 	}
 	public function index()
 	{   
-		$data['vendors'] = $this->Common->get_details('vendor_details',array('status'=>'Active'))->result();
-		$this->load->view('admin/stock/view',$data);
+		$this->load->view('admin/stock/view');
 	}
 	public function get()
 	{
@@ -26,10 +24,27 @@ class Stock extends CI_Controller {
 		{
 			$sub_array = array();
 			
-			$sub_array[] = $res->product_name;
-			$stock       = $this->stock->get_stock($res->product_id);
-			$sub_array[] = $stock;
-			$sub_array[] = '<button type="button" class="btn btn-link" style="font-size:20px;color:green" onclick="add(' . $res->product_id . ',' . $stock . ')"><i class="fa fa-plus"></i></button>';
+			$sub_array[] = $res->ProductName;
+            $sub_array[] = $res->BrandName;
+            $sub_array[] = $res->Category_Title;
+            $sub_array[] = $res->ProductStock;
+            $stock  = $res->ProductStock;
+            if($res->offer_price!='0')
+            {
+            	$rate   = $res->offer_price;
+            	// /$total  = $rate*$stock;
+            }
+            else
+            {
+            	$rate   = $res->ProductMRP;   
+            	// $total  = $rate*$stock;         	// $total  = $rate*$res->ProductStock;
+            }
+            $sub_array[] = $rate;
+            $sub_array[] = $res->manufacturing_date;
+            $sub_array[] = $res->expiry_date;
+            $sub_array[] = $res->batch_number;
+            // $sub_array[] = $total;
+			$sub_array[] = '<button type="button" class="btn btn-link" style="font-size:20px;color:green" onclick="add(' . $res->ProductID . ',' . $res->ProductStock . ')"><i class="fa fa-plus"></i></button>';
 			$data[] = $sub_array;
 		}
 
@@ -61,67 +76,13 @@ class Stock extends CI_Controller {
 		$product_id       = $this->security->xss_clean($this->input->post('product_id'));
 		$current_stock    = $this->security->xss_clean($this->input->post('current_stock'));
 		$new_stock        = $this->security->xss_clean($this->input->post('new_stock'));
-		$vendor_id        = $this->security->xss_clean($this->input->post('vendor_id'));
-		$invoice          = $this->security->xss_clean($this->input->post('invoice_no'));
-		$expiry_date      = $this->security->xss_clean($this->input->post('expiry_date'));
-		$purchase_date    = $this->security->xss_clean($this->input->post('purchase_date'));
-
 		$stock            = $current_stock+$new_stock;
 		
-		$stock_check = $this->Common->get_details('stock_table',array('product_id'=>$product_id));
-		if($stock_check->num_rows()==0)
-        {
-			$array = [
-						'product_id'  => $product_id,
-						'stock'       => $stock, 
-						'timestamp'   => $timestamp
-					];
-			if ($this->Common->insert('stock_table',$array)) 
-			{   
-				$history = [ 
-					         'product_id'         => $product_id,
-                             'history_vendor_id'  => $vendor_id,
-                             'history_invoice_no' => $invoice,
-                             'history_old_stock'  => $current_stock,
-                             'history_new_stock'  => $new_stock,
-                             'history_pur_date'   => $purchase_date,
-                             'history_exp_date'   => $expiry_date
-				           ];
-                $this->Common->insert('stock_history',$history);
-
-				$this->session->set_flashdata('alert_type', 'success');
-				$this->session->set_flashdata('alert_title', 'Success');
-				$this->session->set_flashdata('alert_message', 'Stock added successfully..!');
-
-				redirect('admin/stock');
-			}
-			else 
-			{
-				$this->session->set_flashdata('alert_type', 'error');
-				$this->session->set_flashdata('alert_title', 'Failed');
-				$this->session->set_flashdata('alert_message', 'Failed to add stock..!');
-
-				redirect('admin/stock');
-			}		
-        }
-        else
-        {
     	  $array = [
-						'stock'       => $stock 
+						'ProductStock'       => $stock 
 					];
-			if ($this->Common->update('product_id',$product_id,'stock_table',$array)) 
+			if ($this->Common->update('ProductID',$product_id,'products',$array)) 
 			{   
-				$history = [
-					         'product_id'        => $product_id,
-                             'history_vendor_id'  => $vendor_id,
-                             'history_invoice_no' => $invoice,
-                             'history_old_stock'  => $current_stock,
-                             'history_new_stock'  => $new_stock,
-                             'history_pur_date'   => $purchase_date,
-                             'history_exp_date'   => $expiry_date
-				           ];
-                $this->Common->insert('stock_history',$history);
-
 				$this->session->set_flashdata('alert_type', 'success');
 				$this->session->set_flashdata('alert_title', 'Success');
 				$this->session->set_flashdata('alert_message', 'Stock added successfully..!');
@@ -135,8 +96,7 @@ class Stock extends CI_Controller {
 				$this->session->set_flashdata('alert_message', 'Failed to add stock..!');
 
 				redirect('admin/stock');
-			}		
-        }			
+			}					
 	}
 
 	public function history()

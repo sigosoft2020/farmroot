@@ -84,7 +84,7 @@
                       </ul>
                   </li>
                   <li>
-                      <a href="<?=site_url('admin/vendor')?>"><i class="fa fa-cube"></i> <span> Product Stock </span></a>
+                      <a href="<?=site_url('admin/stock')?>"><i class="fa fa-cube"></i> <span> Product Stock </span></a>
                   </li>
                   <li>
                       <a href="<?=site_url('admin/task')?>"><i class="fa fa-cube"></i> <span> Tasks </span></a>
