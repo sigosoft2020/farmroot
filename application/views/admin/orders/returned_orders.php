@@ -13,7 +13,7 @@
             <div class="row">
               <div class="col-12">
                 <div class="page-title-box">
-                  <h4 class="page-title float-left">Bulk Orders</h4>
+                  <h4 class="page-title float-left">Returned Orders</h4>
                   
                   <div class="clearfix"></div>
                 </div>
@@ -27,18 +27,18 @@
                   <table id="user_data" class="table table-bordered table-striped">
                     <thead>
                       <tr>
-                          <th width="10%">Order No</th>
-                          <th width="10%">Invoice No</th>
-                          <th width="10%">Product</th>
-                          <th width="5%">Quantity</th>
-                          <th width="5%">Price</th>
-                          <th width="5%">Total</th>
-                          <th width="10%">Name</th>
-                          <th width="10%">Address</th>
-                          <th width="10%">Email</th>
-                          <th width="10%">Mobile</th>
-                          <th width="10%">Status</th>
-                          <th width="5%">Update</th>
+                          <th>Order No</th>
+                          <th>Invoice No</th>                          
+                          <th>Name</th>
+                          <th>Email</th>
+                          <th>Mobile</th>
+                          <th>Grand Total</th>
+                          <th>Refund Total</th>
+                          <th>Payment Mode</th>
+                          <th>Reason</th>
+                          <th>Payment Id</th>
+                          <th>Order View</th>
+                          <th>Refund</th>
                       </tr>
                     </thead>
                   </table>
@@ -61,11 +61,10 @@
 
               <!-- Modal body -->
             <div class="modal-body">
-              <form method="POST" action="<?=site_url('admin/orders/bulk_update')?>">
+              <form method="POST" action="<?=site_url('admin/orders/refund_update')?>">
                   <input type="hidden" name="order_id" id="o_id">
                   <select class="form-control" name="status">
-                     <option value="Delivered">Delivered</option>        
-                     <option value="Cancelled">Cancelled</option>        
+                      <option value="Returned">Refunded</option>       
                   </select>  
             </div>
 
@@ -90,7 +89,7 @@
         "serverSide":true,
         "order":[],
         "ajax":{
-          url:"<?=site_url('admin/orders/get_bulk')?>",
+          url:"<?=site_url('admin/orders/get_returned')?>",
           type:"POST"
         },
         "columnDefs":[
@@ -111,23 +110,6 @@
       else {
         return false;
       }
-    }
-
-    function edit(id)
-    {
-      $('#salesman_id').val(id);
-      // alert(id);
-      $.ajax({
-          method: "POST",
-          url: "<?php echo site_url('admin/salesman/getsalesmanById');?>",
-          dataType : "json",
-          data : { id : id },
-          success : function( data ){
-            $('#salesman').val(data.salesman_name);
-            $('#edit-salesman').modal('show');
-            // alert(data);
-          }
-        });
     }
 
    function updater(order_id)

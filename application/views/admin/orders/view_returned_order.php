@@ -119,15 +119,14 @@
                     </tbody>
                    
                     <tfoot>
-                         <tr><td colspan="6" style="text-align:right">Sub Total:</td><td>₹
-                          <?php echo $total; ?></td></tr>
-                         <tr><td colspan="6" style="text-align:right">Delivery Charge:</td><td> ₹ <?php echo 20; ?></td></tr>                    
-                         <tr><td colspan="6" style="text-align:right">SGST:</td><td>₹ <?php echo round(($gamount/2),2); ?></td></tr>
-                         <tr><td colspan="6" style="text-align:right">CGST:</td><td>₹ <?php echo round(($gamount/2),2); ?></td></tr>                           
-                         <tr><td colspan="6" style="text-align:right">Grand Total:</td><td>₹ <?php echo $total+20; ?></td></tr>
+                         <tr><td colspan="6" style="text-align:right">Sub Total:</td><td><?php echo $total; ?></td></tr>
+                         <tr><td colspan="6" style="text-align:right">Delivery Charge:</td><td>  <?php echo 20; ?></td></tr>                    
+                         <tr><td colspan="6" style="text-align:right">SGST:</td><td><?php echo round(($gamount/2),2); ?></td></tr>
+                         <tr><td colspan="6" style="text-align:right">CGST:</td><td><?php echo round(($gamount/2),2); ?></td></tr>                           
+                         <tr><td colspan="6" style="text-align:right">Grand Total:</td><td><?php echo $total+20; ?></td></tr>
                     </tfoot>
                  </table>
-
+                 
                   <div class="col-md-12">
                     <a href="<?=site_url('admin/orders/invoice/'.$order->OrderID)?>"><button class="btn btn-success" type="button" name="print" style="margin-top: 23px">Print</button></a>
                   </div>

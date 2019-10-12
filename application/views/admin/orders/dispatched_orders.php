@@ -13,7 +13,7 @@
             <div class="row">
               <div class="col-12">
                 <div class="page-title-box">
-                  <h4 class="page-title float-left">Delivered Orders</h4>
+                  <h4 class="page-title float-left">Dispatched Orders</h4>
                   
                   <div class="clearfix"></div>
                 </div>
@@ -46,7 +46,6 @@
         </div>
       </div>
       <?php $this->load->view('admin/includes/footer.php'); ?>
-
     </div>
   </body>
   <?php $this->load->view('admin/includes/scripts.php'); ?>
@@ -58,7 +57,7 @@
         "serverSide":true,
         "order":[],
         "ajax":{
-          url:"<?=site_url('admin/orders/get_delivered')?>",
+          url:"<?=site_url('admin/orders/get_dispatched')?>",
           type:"POST"
         },
         "columnDefs":[

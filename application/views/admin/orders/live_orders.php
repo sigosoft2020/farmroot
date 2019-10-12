@@ -27,14 +27,16 @@
                   <table id="user_data" class="table table-bordered table-striped">
                     <thead>
                       <tr>
-                          <th width="10%">Order No</th>
-                          <th width="10%">Invoice No</th>
-                          <th width="25%">Name</th>
+                          <th width="5%">Order No</th>
+                          <th width="5%">Invoice No</th>
+                          <th width="15%">Name</th>
                           <th width="10%">Email</th>
-                          <th width="15%">Mobile</th>
-                          <th width="10%">Status</th>
-                          <th width="10%">View</th>
-                          <th width="10%">Update</th>
+                          <th width="10%">Mobile</th>
+                          <th width="5%">Grand Total</th>
+                          <th width="5%">Status</th>
+                          <th width="10%">Type Of Sale</th>
+                          <th width="5%">View</th>
+                          <th width="5%">Update</th>
                       </tr>
                     </thead>
                   </table>
@@ -60,8 +62,11 @@
               <form method="POST" action="<?=site_url('admin/orders/update')?>">
                   <input type="hidden" name="order_id" id="o_id">
                   <select class="form-control" name="status">
-                     <option value="Delivered">Delivered</option>        
-                     <option value="Cancelled">Cancelled</option>        
+                      <option value="Packed">Packed</option>     
+                      <option value="Dispatched">Dispatched</option>        
+                      <option value="Delivered">Delivered</option>        
+                      <option value="Cancelled">Cancelled</option> 
+                      <option value="Returned">Returned</option>        
                   </select>  
             </div>
 

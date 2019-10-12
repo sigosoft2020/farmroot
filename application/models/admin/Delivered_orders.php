@@ -8,21 +8,21 @@ class Delivered_orders extends CI_Model
   }
   function make_query()
   {
-    $table = "orders";
-    $select_column = array("order_id","order_no","invoice_no","grand_total","user_id","name","email","phone","house","address_1","address_2","city","state","landmark","pincode","status");
-    $order_column = array(null,"name",null,null);
+    $table = "app_orders";
+    $select_column = array("OrderID","OrderNO","InvoiceNO","GrandTotal","BillingDet_UserId","BillingDet_Name","BillingDet_Email","BillingDet_Phone","BillingDet_Land","BillingDet_City","BillingDet_State","BillingDet_PIN","BillingDet_Address","delivery_date","type_of_sale","staff_status","status");
+    $order_column = array(null,null,null,null,null,"BillingDet_Name",null,null,null,null);
 
     $this->db->select($select_column);
     $this->db->from($table);
-    $this->db->where('status','Delivered');
+    $this->db->where("(status='Delivered' AND delivery_status='enable')");
     if (isset($_POST["search"]["value"])) {
-      $this->db->like("name",$_POST["search"]["value"]);
+      $this->db->like("BillingDet_Name",$_POST["search"]["value"]);
     }
     if (isset($_POST["order"])) {
       $this->db->order_by($_POST['order']['0']['column'],$_POST['order']['0']['dir']);
     }
     else {
-      $this->db->order_by("order_id","desc");
+      $this->db->order_by("OrderID","desc");
     }
   }
   function make_datatables()
@@ -43,8 +43,8 @@ class Delivered_orders extends CI_Model
   function get_all_data()
   {
     $this->db->select("*");
-    $this->db->from("orders");
-    $this->db->where('status','Delivered');
+    $this->db->from("app_orders");
+    $this->db->where("(status='Delivered' AND delivery_status='enable')");
     return $this->db->count_all_results();
   }
 }

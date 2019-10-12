@@ -1,6 +1,6 @@
 <?php
 
-class Live_orders extends CI_Model
+class Dispatched_orders extends CI_Model
 {
   function __construct()
   {
@@ -14,7 +14,7 @@ class Live_orders extends CI_Model
 
     $this->db->select($select_column);
     $this->db->from($table);
-    $this->db->where("(status='Order Placed' OR status='Packed' OR status='Dispatched')");
+    $this->db->where('status','Dispatched');
     if (isset($_POST["search"]["value"])) {
       $this->db->like("BillingDet_Name",$_POST["search"]["value"]);
     }
@@ -44,7 +44,7 @@ class Live_orders extends CI_Model
   {
     $this->db->select("*");
     $this->db->from("app_orders");
-    $this->db->where("(status='Order Placed' OR status='Packed' OR status='Dispatched')");
+    $this->db->where('status','Dispatched');
     return $this->db->count_all_results();
   }
 }

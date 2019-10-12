@@ -27,14 +27,15 @@
                   <table id="user_data" class="table table-bordered table-striped">
                     <thead>
                       <tr>
-                          <th width="10%">Order No</th>
-                          <th width="10%">Invoice No</th>
-                          <th width="30%">Name</th>
-                          <th width="15%">Email</th>
-                          <th width="15%">Mobile</th>
-                          
-                          <th width="10%">Status</th>
-                          <th width="10%">View</th>
+                          <th width="5%">Order No</th>
+                          <th width="5%">Invoice No</th>
+                          <th width="15%">Name</th>
+                          <th width="10%">Email</th>
+                          <th width="10%">Mobile</th>
+                          <th width="5%">Grand Total</th>
+                          <th width="5%">Status</th>
+                          <th width="10%">Type Of Sale</th>
+                          <th width="5%">View</th>
                       </tr>
                     </thead>
                   </table>
@@ -45,7 +46,6 @@
         </div>
       </div>
       <?php $this->load->view('admin/includes/footer.php'); ?>
-
     </div>
   </body>
   <?php $this->load->view('admin/includes/scripts.php'); ?>

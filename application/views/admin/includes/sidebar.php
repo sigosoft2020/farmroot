@@ -74,13 +74,13 @@
                       <a href="#"><i class="fa fa-shopping-bag"></i> <span> Orders </span> <span class="menu-arrow"></span></a>
                       <ul class="nav-second-level" aria-expanded="false">
                           <li><a href="<?=site_url('admin/orders')?>">Live Orders</a></li>
-                           <li><a href="<?=site_url('admin/orders/delivered')?>">Dispatched  Orders</a></li>
+                           <li><a href="<?=site_url('admin/orders/dispatched')?>">Dispatched  Orders</a></li>
                           <li><a href="<?=site_url('admin/orders/delivered')?>">Delivered Orders</a></li>
                           <li><a href="<?=site_url('admin/orders/cancelled')?>">Cancelled Orders</a></li>
-                          <li><a href="<?=site_url('admin/orders/cancelled')?>">Returned  Orders</a></li>
-                          <li><a href="<?=site_url('admin/orders/cancelled')?>">Returned COD  Orders</a></li>
-                          <li><a href="<?=site_url('admin/orders/bulk')?>">Staff Orders</a></li>
-                          <li><a href="<?=site_url('admin/orders/bulk')?>">Refunded Orders</a></li>
+                          <li><a href="<?=site_url('admin/orders/returned')?>">Returned  Orders</a></li>
+                          <li><a href="<?=site_url('admin/orders/returned_cod')?>">Returned COD  Orders</a></li>
+                          <!-- <li><a href="<?=site_url('admin/orders/bulk')?>">Staff Orders</a></li> -->
+                          <li><a href="<?=site_url('admin/orders/refunded')?>">Refunded Orders</a></li>
                       </ul>
                   </li>
                   <li>
