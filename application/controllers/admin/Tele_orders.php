@@ -39,7 +39,7 @@ class Tele_orders extends CI_Controller {
 		$BillingDet_PIN     = $this->security->xss_clean($this->input->post('BillingDet_PIN'));
 		$BillingDet_Address = $this->security->xss_clean($this->input->post('BillingDet_Address'));
 		$BillingDet_UserId  = $this->security->xss_clean($this->input->post('BillingDet_UserId'));
-		$BillingDet_Email   = $this->security->xss_clean($this->input->post('Register_Email'));
+		$Register_Email     = $this->security->xss_clean($this->input->post('Register_Email'));
 		$BillingDet_houseno = $this->security->xss_clean($this->input->post('BillingDet_houseno'));
 		$notes              = $this->security->xss_clean($this->input->post('notes'));
 		$d_location         = $this->security->xss_clean($this->input->post('d_location'));
@@ -84,7 +84,7 @@ class Tele_orders extends CI_Controller {
                      'BillingDet_UserId' => $BillingDet_UserId,
                      'UserType'          => $UserType, 
                      'BillingDet_Name'   => $BillingDet_Name, 
-                     'BillingDet_Email'  => $BillingDet_Email, 
+                     'BillingDet_Email'  => $Register_Email, 
                      'BillingDet_Phone'  => $BillingDet_Phone, 
                      'BillingDet_Land'   => $BillingDet_Land, 
                      'BillingDet_City'   => $BillingDet_City, 
@@ -197,7 +197,10 @@ class Tele_orders extends CI_Controller {
                }			                   
             }
         }
-        redirect('admin/tele_orders');
+        $this->session->set_flashdata('alert_type', 'success');
+		$this->session->set_flashdata('alert_title', 'Success');
+		$this->session->set_flashdata('alert_message', 'Order placed successfully..!');
+        redirect('admin/tele_orders/add');
 	}	
 
 	public function get_product()

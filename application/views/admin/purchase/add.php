@@ -15,7 +15,7 @@
             <div class="row">
               <div class="col-12">
                 <div class="page-title-box">
-                  <h4 class="page-title float-left">Tele orders</h4>
+                  <h4 class="page-title float-left">Purchase Entry</h4>
                   <div class="clearfix"></div>
                 </div>
               </div>
@@ -25,108 +25,51 @@
           <div class="row">
             <div class="col-12">
               <div class="card-box">
-                <form action="<?=site_url('admin/tele_orders/addData')?>" method="post" enctype="multipart/form-data" onsubmit="return finalize()"> 
+                <form action="<?=site_url('admin/purchase/addData')?>" method="post" enctype="multipart/form-data" onsubmit="return finalize()"> 
 
                         <div class="row">
                             <div class="col-md-12">
                                 <div class="card-box">
-                                    <h4 class="m-t-0 header-title">Tele Orders</h4>
-                
-        
+                                    <h5 class="m-t-0 header-title">Vendor Details</h5>
+                     
                                         <div class="form-row">
                                             <div class="form-group col-md-4">
-                                                <!-- <label for="inputEmail4" class="col-form-label">Phone</label> -->
-                                                <input class="form-control" name="BillingDet_Phone" id="BillingDet_Phone" placeholder="Phone" onchange="GetCustomer();" oninput="javascript: if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength);" type="number" maxlength = "10" required>
-                                            </div>
-                                            <div class="form-group col-md-4">
-                                                <!-- <label for="inputPassword4" class="col-form-label">Customer Name</label> -->
-                                                <input type="text" class="form-control" name="BillingDet_Name" id="BillingDet_Name" placeholder="Customer Name">
-                                            </div>
-                                            <div class="form-group col-md-4">
-                                                <!-- <label for="inputPassword4" class="col-form-label">Flat No/Villa No/Residence No</label> -->
-                                                <input class="form-control" id="house_no" name="BillingDet_houseno" placeholder="Flat No/Villa No/Residence No"  type="text" required>
-                                            </div>
-                                        </div>
-
-                                        <div class="form-row">
-                                            <div class="form-group col-md-4">
-                                                <!-- <label for="inputEmail4" class="col-form-label">Flat/Villa/House/Residence Name</label> -->
-                                                <input class="form-control" id="BillingDet_Housename" name="BillingDet_Housename" placeholder="Flat/Villa/House/Residence Name"  type="text" required>
-                                            </div>
-                                            <div class="form-group col-md-4">
-                                                <!-- <label for="inputPassword4" class="col-form-label">Area</label> -->
-                                                <input class="form-control" id="BillingDet_Area" name="BillingDet_Area" placeholder="Area" required="required" type="text">
-                                            </div>
-                                            <div class="form-group col-md-4">
-                                                <!-- <label for="inputPassword4" class="col-form-label">Land Mark</label> -->
-                                                <input class="form-control" id="BillingDet_Land" name="BillingDet_Land" placeholder="Land Mark" required="required" type="text">
-                                            </div>
-                                        </div>
-
-                                        <div class="form-row">
-                                            <div class="form-group col-md-4">
-                                                <!-- <label for="inputEmail4" class="col-form-label">Email</label> -->
-                                                <input class="form-control" id="Register_Email" name="Register_Email" placeholder="Email" required="required" type="email">
-
-                                                <input type="hidden" name="BillingDet_UserId" id="BillingDet_UserId">
-                                            </div>
-                                            <div class="form-group col-md-4">
-                                                <!-- <label for="inputPassword4" class="col-form-label">Delivery Location</label> -->
-                                                <select id="d_location" name="d_location" placeholder="Delivery_location" required="required" class="js-example-basic-single" data-live-search="true">
-                                                   <option value="">Select Delivery Location</option>
-                                                    <?php foreach($del_locations as $del)
-                                                      {?>
-                                                   <option value="<?=$del->del_id?>"><?=$del->place_name?></option>      
-                                                     <?php };?> 
-                                                 </select>
-                                            </div>
-                                            <div class="form-group col-md-4">
-                                                <!-- <label for="inputPassword4" class="col-form-label">Delivery Date(Veg)</label> -->
-                                                 <select id="d_date" name="d_date" placeholder="Delivery_date"  class="form-control">
-                                                    <option value="">Select Delivery Date(veg)</option>
-                                                     <?php foreach($veg_date as $veg)
-                                                      {?>
-                                                    <option value="<?=$veg->delivery_date?>"><?=$veg->delivery_date?></option>      
+                                                <select class="form-control js-example-basic-single" data-live-search="true"  name="VBillingDet_Name" id="VBillingDet_Name" placeholder="Vendor Name" onchange="GetVendors()" required>
+                                                    <option value="">Select Vendor</option>
+                                                     <?php foreach($vendors as $vendor) {?>
+                                                     <option value="<?=$vendor->VendorID?>"><?=$vendor->VendorName?></option>
                                                      <?php };?>  
-                                                 </select>
+                                                </select> 
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <input class="form-control" name="VBillingDet_Phone" placeholder="Phone" id="VBillingDet_Phone"  required="required" type="text">
+                                            </div>
+                                            <div class="form-group col-md-4">
+                                                <input class="form-control" id="VBillingDet_City" name="VBillingDet_City" placeholder="City" required="required" type="text">
                                             </div>
                                         </div>
 
                                         <div class="form-row">
                                             <div class="form-group col-md-4">
-                                                <!-- <label for="inputPassword4" class="col-form-label">Delivery Date(Non Veg)</label> -->
-                                                 <select id="d_date_other" name="d_date_other" placeholder="Delivery_date_other"  class="form-control">
-                                                    <option value="">Select Delivery Date(Non Vegetables)</option>
-                                                    <?php foreach($nonveg_date as $nonveg)
-                                                      {?>
-                                                      <option value="<?=$nonveg->delivery_date?>"><?=$nonveg->delivery_date?></option>      
-                                                    <?php };?>  
-                                                 </select>
+                                                <input class="form-control" id="VBillingDet_PIN" name="VBillingDet_PIN" placeholder="PIN Code" required="required" type="text">
                                             </div>
                                             <div class="form-group col-md-4">
-                                                <!-- <label for="inputPassword4" class="col-form-label">Delivery Slot(Veg)</label> -->
-                                                <select id="d_slot" name="d_slot_veg" placeholder="Delivery Slot" class="form-control">
-                                                   <option value="">Select Delivery Slot(Veg)</option>
-                                                   <?php foreach($veg_slots as $veg)
-                                                      {?>
-                                                    <option value="<?=$veg->delivery_slot?>"><?=$veg->delivery_slot?></option>      
-                                                   <?php };?>  
-                                                 </select>
+                                                <input class="form-control" id="VBillingDet_State" name="VBillingDet_State" placeholder="State" required="required" type="text">
                                             </div>
                                             <div class="form-group col-md-4">
-                                                
-                                                <select id="d_slot" name="d_slot_others" placeholder="Delivery Slot" class="form-control">
-                                                    <option value="">Select Delivery Slot(Non Veg)</option>
-                                                    <?php foreach($nonveg_slots as $nonveg)
-                                                      {?>
-                                                     <option value="<?=$nonveg->delivery_slot?>"><?=$nonveg->delivery_slot?></option>      
-                                                    <?php };?> 
-                                                 </select>
-                                            </div>                                            
+                                                <input class="form-control" id="Register_Email" name="Register_Email" placeholder="Email"  type="text">
+                                            </div>
                                         </div>
 
-                                        <div class="form-group">
-                                            <textarea class="form-control" id="notes" name="notes" rows="1" placeholder="Notes"></textarea>
+                                        <div class="form-row">
+                                            <div class="form-group col-md-4">
+                                               <input class="form-control" id="VBillingDet_GST" name="VBillingDet_GST" placeholder="GST No"  type="text">
+
+                                               <input type="hidden" name="vendor_name" id="vendor_name">
+                                            </div>
+                                            <div class="form-group col-md-8">
+                                              <textarea  rows="1" id="VBillingDet_Address" name="VBillingDet_Address" class="form-control" placeholder="Address"></textarea>
+                                           </div>                                          
                                         </div>
                                         <br>
                                 </div>
@@ -142,7 +85,7 @@
                                 <tr>
                                   <td>Product Name</td>
                                   <td>Product MRP</td>
-                                  <td>Offer Price</td>
+                                  <!-- <td>Offer Price</td> -->
                                   <td>Quantity</td>
                                   <td>Total</td>                                  
                                   <td></td>
@@ -160,9 +103,9 @@
                                     <input type="hidden" name="ProductID" id="ProductID">
                                  </td>
                                
-                                 <td><input class="form-control " name="Product_MRP" placeholder="" type="text" id="Product_MRP" readonly></td>
+                                 <td><input class="form-control " name="Product_MRP" placeholder="" type="text" id="Product_MRP" oninput="GetPtotal()"></td>
                                  
-                                 <td><input class="form-control " name="offerprice" placeholder="" type="text" id="offerprice" readonly></td>
+                                <input class="form-control " name="offerprice" placeholder="" type="hidden" id="offerprice" oninput="GetPtotal()">
                                  
                                  <td><input class="form-control" name="Quantity" placeholder="" type="number" min="1" id="Quantity" oninput="GetPtotal()"></td>
 
@@ -207,8 +150,7 @@
                                         <div class="col-md-3 col-sm-12 col-xs-12">
                                           <label>Grand Total(₹)</label>
                                           <input class="form-control" type="text" id="grandTotal" value="20" readonly>
-                                       </div>
-                                    
+                                       </div>                                   
                                   </div>
                                 </div>
       
@@ -246,36 +188,34 @@
   </script>
   <script type="">
     
-    function GetCustomer()
+    function GetVendors()
     {
-      var BillingDet_Phone = document.getElementById('BillingDet_Phone').value;
+      var VBillingDet_Name = document.getElementById('VBillingDet_Name').value
       // alert(id);
        $.ajax({
           method: "POST",
-          url: "<?php echo site_url('admin/tele_orders/get_customer');?>",
+          url: "<?php echo site_url('admin/purchase/get_vendor');?>",
           dataType : "json",
-          data : { BillingDet_Phone : BillingDet_Phone },
+          data : { VBillingDet_Name : VBillingDet_Name },
           success : function( data ){
-            $('#BillingDet_Name').val(data.BillingDet_Name);
-            $('#BillingDet_Land').val(data.BillingDet_Land);
-            $('#BillingDet_City').val(data.BillingDet_City);
-            $('#BillingDet_State').val(data.BillingDet_State);
+            $('#vendor_name').val(data.VendorName);
+            $('#VBillingDet_Phone').val(data.Phone);
+            $('#VBillingDet_City').val(data.City);
+            $('#VBillingDet_PIN').val(data.PINCode);
+            $('#VBillingDet_Address').val(data.Address);
+            $('#VBillingDet_State').val(data.State);
             $('#BillingDet_PIN').val(data.BillingDet_PIN);
-            $('#BillingDet_Area').val(data.BillingDet_Area);
-            $('#BillingDet_Housename').val(data.BillingDet_Housename);
-            $('#house_no').val(data.house_no);
-            $('#notes').val(data.notes);
-            $('#BillingDet_UserId').val(data.BillingDet_UserId); 
-            $('#Register_Email').val(data.BillingDet_Email); 
+            $('#VBillingDet_VendorIDE').val(data.VendorID);
+            $('#Register_Email').val(data.Email);
+            $('#VBillingDet_GST').val(data.GSTNo);
           }
         });
     }
 
     function Getproduct()
        {
-      
         var id = document.getElementById('typeahead').value;
-
+      // alert(id);
        $.ajax({
           method: "POST",
           url: "<?php echo site_url('admin/tele_orders/get_product');?>",
@@ -283,25 +223,25 @@
           data : { id : id },
           success : function( data ){
             $('#ProductID').val(data.ProductID);
-            $('#Product_MRP').val(data.ProductMRP);
-            $('#ProductStock').val(data.ProductStock);
-            $('#gst').val(data.gst);
-            $('#cgst').val(data.cgst);
-            $('#sgst').val(data.sgst);
-            $('#gst_amt').val(data.gst_amt); 
+            // $('#Product_MRP').val(data.ProductMRP);
+            // $('#ProductStock').val(data.ProductStock);
+            // $('#gst').val(data.gst);
+            // $('#cgst').val(data.cgst);
+            // $('#sgst').val(data.sgst);
+            // $('#gst_amt').val(data.gst_amt); 
 
-           if(data.percentage!="0")
-           {
-             var perc = data.percentage;
-             var mrp  = data.ProductMRP;
-             var offer=(parseInt(mrp)-(parseInt(mrp)*(parseInt(perc)/100))).toFixed(2);
-             document.getElementById('offerprice').value =offer;
-           }
-           else
-           {
+           // if(data.percentage!="0")
+           // {
+           //   var perc = data.percentage;
+           //   var mrp  = data.ProductMRP;
+           //   var offer=(parseInt(mrp)-(parseInt(mrp)*(parseInt(perc)/100))).toFixed(2);
+           //   document.getElementById('offerprice').value =offer;
+           // }
+           // else
+           // {
               document.getElementById('offerprice').value ="0";
-           }
-            
+           // }
+            // alert(data);
           }
         });
        }
@@ -394,16 +334,13 @@
                }
                else if( Product_MRP==null || Product_MRP=="")
                {
-                 alert("Fill the required Field")
+                 alert("Add Product Price")
                }
                else if( Quantity==null || Quantity=="")
                {
                  alert("Add Quantity")
                }
-               else  if( Quantity > Stock)
-               {
-                alert("Sorry! Only " +Stock+ " items are available ")
-               }  
+              
                else
                {           
                 var table=document.getElementById("myTable");
@@ -445,6 +382,7 @@
                     t4.id = "offerprice"+index;
                     t4.value=offerprice;
                     t4.name="offerprice[]";
+                    t4.type="Hidden";
                     t4.className = "form-control col-md-7 col-xs-12";
                     t4.style.marginTop = "10px"
                     cell4.appendChild(t4);

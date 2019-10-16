@@ -90,7 +90,7 @@
                       <a href="<?=site_url('admin/task')?>"><i class="fa fa-cube"></i> <span> Tasks </span></a>
                   </li>
                   <li>
-                      <a href="<?=site_url('admin/vendor')?>"><i class="fa fa-archive"></i> <span> Purchase Entry </span></a>
+                      <a href="<?=site_url('admin/purchase/add')?>"><i class="fa fa-archive"></i> <span> Purchase Entry </span></a>
                   </li>
                   <li>
                       <a href="#"><i class="fa fa-shopping-bag"></i> <span> Products </span> <span class="menu-arrow"></span></a>
