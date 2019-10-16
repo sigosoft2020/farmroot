@@ -68,7 +68,7 @@
                       </ul>
                   </li>
                   <li>
-                      <a href="<?=site_url('admin/vendor')?>"><i class="fa fa-money"></i> <span> Tele Orders </span></a>
+                      <a href="<?=site_url('admin/tele_orders/add')?>"><i class="fa fa-money"></i> <span> Tele Orders </span></a>
                   </li>
                   <li>
                       <a href="#"><i class="fa fa-shopping-bag"></i> <span> Orders </span> <span class="menu-arrow"></span></a>
