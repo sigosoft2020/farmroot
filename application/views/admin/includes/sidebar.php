@@ -188,18 +188,10 @@
                     <a><i class="fa fa-gift"></i><span>Offers</span><span class="menu-arrow"></span></a>
                     <ul class="nav-second-level" aria-expanded="false">
                       <li>
-                        <a href="#"><span> Other Offers </span> <span class="menu-arrow"></span></a>
-                        <ul class="nav-third-level" aria-expanded="false">
-                            <li><a href="<?=site_url('admin/testimonial/add')?>">Create Offer</a></li>
-                            <li><a href="<?=site_url('admin/testimonial')?>">Manage Offer location</a></li>
-                        </ul>
+                        <a href="<?=site_url('admin/offer')?>"><span> Other Offers </span></a>
                       </li>
                       <li>
-                        <a href="#"><span> Todays Deal </span> <span class="menu-arrow"></span></a>
-                        <ul class="nav-third-level" aria-expanded="false">
-                            <li><a href="<?=site_url('admin/testimonial/add')?>">Create Deal</a></li>
-                            <li><a href="<?=site_url('admin/testimonial')?>">Manage Deal</a></li>
-                        </ul>
+                        <a href="<?=site_url('admin/todays_deal')?>"><span> Todays Deal </span></a>
                       </li>                    
                     </ul>                    
                   </li>
