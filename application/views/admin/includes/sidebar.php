@@ -16,7 +16,6 @@
       <nav class="navbar-custom">
 
           <ul class="list-unstyled topbar-right-menu float-right mb-0">
-
               <li class="dropdown notification-list">
                   <a class="nav-link dropdown-toggle waves-effect waves-light nav-user" data-toggle="dropdown" href="#" role="button"
                      aria-haspopup="false" aria-expanded="false">
@@ -135,18 +134,10 @@
                       </ul>
                   </li>
                   <li>
-                      <a href="#"><i class="fa fa-clock-o"></i> <span> Delivery Date </span> <span class="menu-arrow"></span></a>
-                      <ul class="nav-second-level" aria-expanded="false">
-                          <li><a href="<?=site_url('admin/delivery_date/add')?>">Add Delivery date</a></li>
-                          <li><a href="<?=site_url('admin/delivery_date')?>">Manage Delivery date</a></li>
-                      </ul>
+                      <a href="<?=site_url('admin/delivery_date')?>"><i class="fa fa-clock-o"></i> <span> Delivery Date </span></a>
                   </li>
                   <li>
-                      <a href="#"><i class="fa fa-file-excel-o"></i> <span> Delivery Slot </span> <span class="menu-arrow"></span></a>
-                      <ul class="nav-second-level" aria-expanded="false">
-                          <li><a href="<?=site_url('admin/delivery_slot/add')?>">Add Delivery slot</a></li>
-                          <li><a href="<?=site_url('admin/delivery_slot')?>">Manage Delivery slot</a></li>
-                      </ul>
+                      <a href="<?=site_url('admin/delivery_slot')?>"><i class="fa fa-file-excel-o"></i> <span> Delivery Slot </span></a>
                   </li>
                   <li>
                       <a href="#"><i class="fa fa-book"></i> <span> Expense </span> <span class="menu-arrow"></span></a>
@@ -178,11 +169,7 @@
                       </ul>
                   </li>
                   <li>
-                      <a href="#"><i class="fa fa-quote-left"></i> <span> Delivery Locations </span> <span class="menu-arrow"></span></a>
-                      <ul class="nav-second-level" aria-expanded="false">
-                          <li><a href="<?=site_url('admin/delivery_location/add')?>">Create Delivery location</a></li>
-                          <li><a href="<?=site_url('admin/delivery_location')?>">Manage Delivery location</a></li>
-                      </ul>
+                      <a href="<?=site_url('admin/delivery_location')?>"><i class="fa fa-quote-left"></i> <span> Delivery Locations </span></a>
                   </li>
                   <li>
                     <a><i class="fa fa-gift"></i><span>Offers</span><span class="menu-arrow"></span></a>
