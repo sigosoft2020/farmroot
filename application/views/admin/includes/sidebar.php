@@ -198,11 +198,11 @@
                   <li>
                       <a href="#"><i class="fa fa-bell"></i> <span> Payments </span> <span class="menu-arrow"></span></a>
                       <ul class="nav-second-level" aria-expanded="false">
-                          <li><a href="<?=site_url('admin/wholesaler/request')?>"> Add Payment</a></li>
-                          <li><a href="<?=site_url('admin/wholesaler')?>">Manage Payment</a></li>
-                          <li><a href="<?=site_url('admin/wholesaler')?>">App Order Payments</a></li>
-                          <li><a href="<?=site_url('admin/wholesaler')?>">Tele Order Payments</a></li>
-                          <li><a href="<?=site_url('admin/wholesaler')?>">Payments Balanace</a></li>
+                          <!-- <li><a href="<?=site_url('admin/wholesaler/request')?>"> Add Payment</a></li> -->
+                          <!-- <li><a href="<?=site_url('admin/wholesaler')?>">Manage Payment</a></li> -->
+                          <li><a href="<?=site_url('admin/payment/app_orders')?>">App Order Payments</a></li>
+                          <li><a href="<?=site_url('admin/payment/tele_orders')?>">Tele Order Payments</a></li>
+                          <!-- <li><a href="<?=site_url('admin/wholesaler')?>">Payments Balanace</a></li> -->
                       </ul>
                   </li>
                   <li>
