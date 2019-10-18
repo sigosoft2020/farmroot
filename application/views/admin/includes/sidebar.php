@@ -195,8 +195,8 @@
                   <li>
                       <a href="#"><i class="fa fa-bell"></i> <span> Notifications </span> <span class="menu-arrow"></span></a>
                       <ul class="nav-second-level" aria-expanded="false">
-                          <li><a href="<?=site_url('admin/wholesaler/request')?>"> Send Notifications</a></li>
-                          <li><a href="<?=site_url('admin/wholesaler')?>">Notification Images</a></li>
+                          <li><a href="<?=site_url('admin/notification/add')?>"> Send Notifications</a></li>
+                          <!-- <li><a href="<?=site_url('admin/wholesaler')?>">Notification Images</a></li> -->
                       </ul>
                   </li>
                   <li>
