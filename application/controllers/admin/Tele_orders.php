@@ -204,9 +204,105 @@ class Tele_orders extends CI_Controller {
 	}	
 
 	public function get_product()
-	{		
+	{	
+	    $today= date('Y-m-d');	
 		$id   = $this->input->post('id');
 		$data = $this->Common->get_details('products',array('PsearchName' => $id))->row();
+		$price       = $data->ProductMRP;
+		$product_id  = $data->ProductID;
+		$category_id = $data->CategoryID;
+		$subcategory = $data->Subcategory_ID;
+		$brand_id    = $data->BrandID;
+
+		$deal_check  = $this->Common->get_details('todays_deal',array('deal_date'=>$today,'status'=>'Active'));
+        $offer_check = $this->bill->check_offer($today);
+
+		if($deal_check->num_rows()>0)
+		{ 
+          $type        = $deal_check->row()->type;
+          $item        = $deal_check->row()->item_id;
+          $percentage  = $deal_check->row()->percentage;
+         
+          if($type=='Product' && $item==$product_id)
+          {  
+          	$data->offer = $percentage;
+          }
+          elseif($type=='Category' && $item==$category_id)
+          {
+          	$data->offer = $percentage;
+          }
+          elseif($type=='Subcategory' && $item==$subcategory)
+          {
+          	$data->offer = $percentage;
+          }
+          elseif($type=='Brand' && $item==$brand_id)
+          {
+          	$data->offer = $percentage;
+          }
+          else if($offer_check->num_rows()>0)
+          {
+			   $type        = $offer_check->row()->type;
+	           $item        = $offer_check->row()->item_id;
+	           $percentage  = $offer_check->row()->percentage;
+
+	          if($type=='Product' && $item==$product_id)
+	          {  
+	          	$data->offer = $percentage;
+	          }
+	          elseif($type=='Category' && $item==$category_id)
+	          {
+	          	$data->offer = $percentage;
+	          }
+	          elseif($type=='Subcategory' && $item==$subcategory)
+	          {
+	          	$data->offer = $percentage;
+	          }
+	          elseif($type=='Brand' && $item==$brand_id)
+	          {
+	          	$data->offer = $percentage;
+	          }
+	          else
+	          {
+	          	$data->offer = '0';
+	          }
+		 }
+		 else
+		 {
+		 	$data->offer  = '0';
+		 }
+		}
+		else if($offer_check->num_rows()>0)
+		{
+		   $type        = $offer_check->row()->type;
+           $item        = $offer_check->row()->item_id;
+           $percentage  = $offer_check->row()->percentage;
+
+          if($type=='Product' && $item==$product_id)
+          {  
+          	$data->offer = $percentage;
+          }
+          elseif($type=='Category' && $item==$category_id)
+          {
+          	$data->offer = $percentage;
+          }
+          elseif($type=='Subcategory' && $item==$subcategory)
+          {
+          	$data->offer = $percentage;
+          }
+          elseif($type=='Brand' && $item==$brand_id)
+          {
+          	$data->offer = $percentage;
+          }
+          else
+          {
+          	$data->offer = '0';
+          }
+		}
+		else
+		{
+			$data->offer  = '0';
+		}
+		
 		print_r(json_encode($data));
 	}
 

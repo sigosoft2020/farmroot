@@ -290,12 +290,12 @@
             $('#sgst').val(data.sgst);
             $('#gst_amt').val(data.gst_amt); 
 
-           if(data.percentage!="0")
+           if(data.offer!="0")
            {
-             var perc = data.percentage;
+             var perc = data.offer;
              var mrp  = data.ProductMRP;
-             var offer=(parseInt(mrp)-(parseInt(mrp)*(parseInt(perc)/100))).toFixed(2);
-             document.getElementById('offerprice').value =offer;
+             var offers=(parseInt(mrp)-(parseInt(mrp)*(parseInt(perc)/100))).toFixed(2);
+             document.getElementById('offerprice').value =offers;
            }
            else
            {
