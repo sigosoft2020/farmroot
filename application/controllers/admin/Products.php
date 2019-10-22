@@ -145,12 +145,12 @@ class Products extends CI_Controller {
 					];
 			if ($product_id=$this->Common->insert('products',$array)) 
 			{   
-				$img_array = [
-                 		            'product_id'    => $product_id,
-                 		            'product_image' => $tar_file,
-                 		            'timestamp'     => $timestamp
-                 	               ];
-                $this->Common->insert('product_images',$img_array); 
+				// $img_array = [
+    //              		            'product_id'    => $product_id,
+    //              		            'product_image' => $tar_file,
+    //              		            'timestamp'     => $timestamp
+    //              	               ];
+    //             $this->Common->insert('product_images',$img_array); 
 
                 $file1 = $_FILES['file-1'];
 				$file2 = $_FILES['file-2'];  

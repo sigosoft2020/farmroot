@@ -261,8 +261,9 @@ class Orders extends CI_Controller {
 	}
 
 	public function returned_order_view($id)
-	{
-      $check = $this->Common->get_details('app_orders',array('OrderNO'=>$id));
+	{ 
+	  $current = date('Y-m-d');	
+      $check   = $this->Common->get_details('app_orders',array('OrderNO'=>$id));
       if($check->num_rows()>0)
       {
       	$order          = $check->row();
@@ -285,7 +286,8 @@ class Orders extends CI_Controller {
 		{
 			$array = [
 				       'status'          => $status,
-				       'delivery_status' => 'enable'
+				       'delivery_status' => 'enable',
+				       'delivered_date'  => $date
 			         ];
 		
 			if ($this->Common->update('OrderID',$order_id,'app_orders',$array)) 
@@ -300,7 +302,8 @@ class Orders extends CI_Controller {
 
 				redirect('admin/orders/delivered');
 			}
-			else {
+			else 
+			{
 				$this->session->set_flashdata('alert_type', 'error');
 				$this->session->set_flashdata('alert_title', 'Failed');
 				$this->session->set_flashdata('alert_message', 'Failed to edit status..!');
@@ -312,7 +315,8 @@ class Orders extends CI_Controller {
 		{
 			$array = [
 				       'status'          => $status,
-				       'delivery_status' => 'enable'
+				       'delivery_status' => 'enable',
+				       'cancelled_date'  => $date
 			         ];
 		
 			if ($this->Common->update('OrderID',$order_id,'app_orders',$array)) {

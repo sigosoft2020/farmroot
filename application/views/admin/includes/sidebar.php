@@ -67,7 +67,7 @@
                       </ul>
                   </li>
                   <li>
-                      <a href="<?=site_url('admin/tele_orders/add')?>"><i class="fa fa-money"></i> <span> Tele Orders </span></a>
+                      <a href="<?=site_url('admin/tele_orders/add')?>"><i class="fa fa-first-order"></i> <span> Tele Orders </span></a>
                   </li>
                   <li>
                       <a href="#"><i class="fa fa-shopping-bag"></i> <span> Orders </span> <span class="menu-arrow"></span></a>
@@ -106,25 +106,21 @@
                       </ul>
                   </li>
                   <li>
-                      <a href="#"><i class="fa fa-ticket"></i> <span> Sub Category </span> <span class="menu-arrow"></span></a>
+                      <a href="#"><i class="fa fa-list-alt"></i> <span> Sub Category </span> <span class="menu-arrow"></span></a>
                       <ul class="nav-second-level" aria-expanded="false">
                           <li><a href="<?=site_url('admin/subcategory/add')?>">Add SubCategory</a></li>
                           <li><a href="<?=site_url('admin/subcategory')?>">Manage SubCategory</a></li>
                       </ul>
                   </li>
                   <li>
-                      <a href="#"><i class="fa fa-ticket"></i> <span> Brands </span> <span class="menu-arrow"></span></a>
+                      <a href="#"><i class="fa fa-behance-square custom"></i> <span> Brands </span> <span class="menu-arrow"></span></a>
                       <ul class="nav-second-level" aria-expanded="false">
                           <li><a href="<?=site_url('admin/brands/add')?>">Add Brand</a></li>
                           <li><a href="<?=site_url('admin/brands')?>">Manage Brand</a></li>
                       </ul>
                   </li>
                   <li>
-                      <a href="#"><i class="fa fa-users"></i> <span> Vendors </span> <span class="menu-arrow"></span></a>
-                      <ul class="nav-second-level" aria-expanded="false">
-                          <li><a href="<?=site_url('admin/vendor/add')?>">Add Vendor</a></li>
-                          <li><a href="<?=site_url('admin/vendor')?>">Manage Vendor</a></li>
-                      </ul>
+                      <a href="<?=site_url('admin/vendor')?>"><i class="fa fa-users"></i> <span> Vendors </span></a>
                   </li>
                   <li>
                       <a href="#"><i class="fa fa-user"></i> <span> Customers </span> <span class="menu-arrow"></span></a>
@@ -169,7 +165,7 @@
                       </ul>
                   </li>
                   <li>
-                      <a href="<?=site_url('admin/delivery_location')?>"><i class="fa fa-quote-left"></i> <span> Delivery Locations </span></a>
+                      <a href="<?=site_url('admin/delivery_location')?>"><i class="fa fa-truck"></i> <span> Delivery Locations </span></a>
                   </li>
                   <li>
                     <a><i class="fa fa-gift"></i><span>Offers</span><span class="menu-arrow"></span></a>
@@ -183,7 +179,7 @@
                     </ul>                    
                   </li>
                   <li>
-                      <a href="#"><i class="fa fa-bell"></i> <span> Payments </span> <span class="menu-arrow"></span></a>
+                      <a href="#"><i class="fa fa-money"></i> <span> Payments </span> <span class="menu-arrow"></span></a>
                       <ul class="nav-second-level" aria-expanded="false">
                           <!-- <li><a href="<?=site_url('admin/wholesaler/request')?>"> Add Payment</a></li> -->
                           <!-- <li><a href="<?=site_url('admin/wholesaler')?>">Manage Payment</a></li> -->
@@ -203,7 +199,7 @@
                       <a href="<?=site_url('admin/voucher')?>"><i class="fa fa-gift"></i> <span> Voucher </span></a>
                   </li>
                   <li>
-                      <a href="#"><i class="fa fa-bell"></i> <span> Blog </span> <span class="menu-arrow"></span></a>
+                      <a href="#"><i class="fa fa-pencil-square-o"></i> <span> Blog </span> <span class="menu-arrow"></span></a>
                       <ul class="nav-second-level" aria-expanded="false">
                           <li><a href="<?=site_url('admin/blog/add')?>"> Write Blog</a></li>
                           <li><a href="<?=site_url('admin/blog')?>">Manage Blog</a></li>

@@ -180,7 +180,7 @@
 
                               <div>
                                   <p class="mb-1 mt-4 font-weight-bold">Batch Number<span>*</span></p>
-                                  <input id="batch_number" class="form-control col-md-7 col-xs-12" name="batch_number" value="<?php echo @$product->batch_number;?>" placeholder="Batch Number" type="text" required>
+                                  <input id="batch_number" class="form-control col-md-7 col-xs-12" name="batch_number" value="<?php echo @$product->batch_number;?>" placeholder="Batch Number" type="text">
                               </div>
 
                               <div>
@@ -190,7 +190,7 @@
 
                               <div>
                                   <p class="mb-1 mt-4 font-weight-bold">Recipe<span>*</span></p>
-                                  <textarea id="recipe" required="required" placeholder="Recipe" name="recipe" class="form-control col-md-7 col-xs-12" rows="4"><?php echo @$product->recipe;?></textarea>
+                                  <textarea id="recipe" placeholder="Recipe" name="recipe" class="form-control col-md-7 col-xs-12" rows="4"><?php echo @$product->recipe;?></textarea>
                               </div><br>
 
                               <div>

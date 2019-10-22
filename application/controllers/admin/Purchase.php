@@ -115,15 +115,6 @@ class Purchase extends CI_Controller {
 		print_r(json_encode($data));
 	}
 
-	public function search($key)
-	{
-	    $array = array();
-	    $query = $this->bill->get_search($key);
-	    foreach($query as $q)
-	    {
-	      $array[] = $q->PsearchName;
-	    }
-	    echo json_encode($array);
-    }
+	
 }
 ?>
