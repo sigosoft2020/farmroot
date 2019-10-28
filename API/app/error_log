@@ -1,0 +1,639 @@
+[24-Oct-2018 06:27:38 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:27:38 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:27:38 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:27:38 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:27:38 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:27:38 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:27:46 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:27:46 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:27:46 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:27:46 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:27:46 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:27:46 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:28:31 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:28:31 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:28:31 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:28:31 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:28:31 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:28:31 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:28:36 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:28:36 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:28:36 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:28:36 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:28:36 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:28:36 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:28:49 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:28:49 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:28:49 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:28:49 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:28:49 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:28:49 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:30:35 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:30:35 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:30:35 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:30:35 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:30:35 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:30:35 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:30:42 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:30:42 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:30:42 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:30:42 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:30:42 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:30:42 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:31:16 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:31:16 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:31:16 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:31:16 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:31:16 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:31:16 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:32:04 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:32:04 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:32:04 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:32:04 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:32:04 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:32:04 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:32:32 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:32:32 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:32:32 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:32:32 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:32:32 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:32:32 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:33:05 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:33:05 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:33:05 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:33:05 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:33:05 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:33:05 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:33:26 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:33:26 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:33:26 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:33:26 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:33:26 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:33:26 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:33:32 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:33:32 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:33:32 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:33:32 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:33:32 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:33:32 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:33:35 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:33:35 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:33:35 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:33:35 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:33:35 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:33:35 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:41:54 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:41:54 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:41:54 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:41:54 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:41:54 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:41:54 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:41:56 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:41:56 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:41:56 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:41:56 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:41:56 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:41:56 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:41:57 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:41:57 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:41:57 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:41:57 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:41:57 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:41:57 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:45:08 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:45:08 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:45:08 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:45:08 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:45:08 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:45:08 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:45:15 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:45:15 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:45:15 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:45:15 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:45:15 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:45:15 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:45:19 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:45:19 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:45:19 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:45:19 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:45:19 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:45:19 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:47:54 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:47:54 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:47:54 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:47:54 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/login.php on line 11
+[24-Oct-2018 06:47:54 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/login.php on line 11
+[24-Oct-2018 06:47:54 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/login.php on line 13
+[24-Oct-2018 06:47:56 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:47:56 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:47:56 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:47:56 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/login.php on line 11
+[24-Oct-2018 06:47:56 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/login.php on line 11
+[24-Oct-2018 06:47:56 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/login.php on line 13
+[24-Oct-2018 06:48:03 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:48:03 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:48:03 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:48:03 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/login.php on line 11
+[24-Oct-2018 06:48:03 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/login.php on line 11
+[24-Oct-2018 06:48:03 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/login.php on line 13
+[24-Oct-2018 06:48:11 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:48:11 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:48:11 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:48:11 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/login.php on line 11
+[24-Oct-2018 06:48:11 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/login.php on line 11
+[24-Oct-2018 06:48:11 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/login.php on line 13
+[24-Oct-2018 06:48:13 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:48:13 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:48:13 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:48:13 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/login.php on line 11
+[24-Oct-2018 06:48:13 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/login.php on line 11
+[24-Oct-2018 06:48:13 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/login.php on line 13
+[24-Oct-2018 06:48:33 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:48:33 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:48:33 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:48:33 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/login.php on line 11
+[24-Oct-2018 06:48:33 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/login.php on line 11
+[24-Oct-2018 06:48:33 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/login.php on line 13
+[24-Oct-2018 06:52:10 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:52:10 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:52:10 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:52:10 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/login.php on line 11
+[24-Oct-2018 06:52:10 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/login.php on line 11
+[24-Oct-2018 06:52:10 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/login.php on line 13
+[24-Oct-2018 06:52:44 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:52:44 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:52:44 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:52:44 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/login.php on line 11
+[24-Oct-2018 06:52:44 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/login.php on line 11
+[24-Oct-2018 06:52:44 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/login.php on line 13
+[24-Oct-2018 06:52:45 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:52:45 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:52:45 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:52:45 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/login.php on line 11
+[24-Oct-2018 06:52:45 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/login.php on line 11
+[24-Oct-2018 06:52:45 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/login.php on line 13
+[24-Oct-2018 06:54:20 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:54:20 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:54:20 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:54:20 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/login.php on line 11
+[24-Oct-2018 06:54:20 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/login.php on line 11
+[24-Oct-2018 06:54:20 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/login.php on line 13
+[24-Oct-2018 06:54:34 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:54:34 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:54:34 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/login.php on line 3
+[24-Oct-2018 06:54:34 Etc/GMT] PHP Notice:  Undefined index: username in /home/farmroot/public_html/API/app/login.php on line 5
+[24-Oct-2018 06:54:34 Etc/GMT] PHP Notice:  Undefined index: password in /home/farmroot/public_html/API/app/login.php on line 6
+[24-Oct-2018 06:54:34 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/login.php on line 11
+[24-Oct-2018 06:54:34 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/login.php on line 11
+[24-Oct-2018 06:54:34 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/login.php on line 13
+[24-Oct-2018 06:55:21 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:21 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:21 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:21 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:55:21 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:55:21 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:55:32 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:32 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:32 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:32 Etc/GMT] PHP Notice:  Undefined index: username in /home/farmroot/public_html/API/app/Device_staff_login.php on line 5
+[24-Oct-2018 06:55:32 Etc/GMT] PHP Notice:  Undefined index: password in /home/farmroot/public_html/API/app/Device_staff_login.php on line 6
+[24-Oct-2018 06:55:32 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:55:32 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:55:32 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:55:40 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:40 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:40 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:40 Etc/GMT] PHP Notice:  Undefined index: username in /home/farmroot/public_html/API/app/Device_staff_login.php on line 5
+[24-Oct-2018 06:55:40 Etc/GMT] PHP Notice:  Undefined index: password in /home/farmroot/public_html/API/app/Device_staff_login.php on line 6
+[24-Oct-2018 06:55:40 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:55:40 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:55:40 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:55:41 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:41 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:41 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:41 Etc/GMT] PHP Notice:  Undefined index: username in /home/farmroot/public_html/API/app/Device_staff_login.php on line 5
+[24-Oct-2018 06:55:41 Etc/GMT] PHP Notice:  Undefined index: password in /home/farmroot/public_html/API/app/Device_staff_login.php on line 6
+[24-Oct-2018 06:55:41 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:55:41 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:55:41 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:55:43 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:43 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:43 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:43 Etc/GMT] PHP Notice:  Undefined index: username in /home/farmroot/public_html/API/app/Device_staff_login.php on line 5
+[24-Oct-2018 06:55:43 Etc/GMT] PHP Notice:  Undefined index: password in /home/farmroot/public_html/API/app/Device_staff_login.php on line 6
+[24-Oct-2018 06:55:43 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:55:43 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:55:43 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:55:44 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:44 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:44 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:44 Etc/GMT] PHP Notice:  Undefined index: username in /home/farmroot/public_html/API/app/Device_staff_login.php on line 5
+[24-Oct-2018 06:55:44 Etc/GMT] PHP Notice:  Undefined index: password in /home/farmroot/public_html/API/app/Device_staff_login.php on line 6
+[24-Oct-2018 06:55:44 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:55:44 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:55:44 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:55:50 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:50 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:50 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:50 Etc/GMT] PHP Notice:  Undefined index: username in /home/farmroot/public_html/API/app/Device_staff_login.php on line 5
+[24-Oct-2018 06:55:50 Etc/GMT] PHP Notice:  Undefined index: password in /home/farmroot/public_html/API/app/Device_staff_login.php on line 6
+[24-Oct-2018 06:55:50 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:55:50 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:55:50 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:55:54 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:54 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:54 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:54 Etc/GMT] PHP Notice:  Undefined index: username in /home/farmroot/public_html/API/app/Device_staff_login.php on line 5
+[24-Oct-2018 06:55:54 Etc/GMT] PHP Notice:  Undefined index: password in /home/farmroot/public_html/API/app/Device_staff_login.php on line 6
+[24-Oct-2018 06:55:54 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:55:54 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:55:54 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:55:55 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:55 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:55 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:55 Etc/GMT] PHP Notice:  Undefined index: username in /home/farmroot/public_html/API/app/Device_staff_login.php on line 5
+[24-Oct-2018 06:55:55 Etc/GMT] PHP Notice:  Undefined index: password in /home/farmroot/public_html/API/app/Device_staff_login.php on line 6
+[24-Oct-2018 06:55:55 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:55:55 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:55:55 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:55:56 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:56 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:56 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:56 Etc/GMT] PHP Notice:  Undefined index: username in /home/farmroot/public_html/API/app/Device_staff_login.php on line 5
+[24-Oct-2018 06:55:56 Etc/GMT] PHP Notice:  Undefined index: password in /home/farmroot/public_html/API/app/Device_staff_login.php on line 6
+[24-Oct-2018 06:55:56 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:55:56 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:55:56 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:55:57 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:57 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:57 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:57 Etc/GMT] PHP Notice:  Undefined index: username in /home/farmroot/public_html/API/app/Device_staff_login.php on line 5
+[24-Oct-2018 06:55:57 Etc/GMT] PHP Notice:  Undefined index: password in /home/farmroot/public_html/API/app/Device_staff_login.php on line 6
+[24-Oct-2018 06:55:57 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:55:57 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:55:57 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:55:58 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:58 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:58 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:58 Etc/GMT] PHP Notice:  Undefined index: username in /home/farmroot/public_html/API/app/Device_staff_login.php on line 5
+[24-Oct-2018 06:55:58 Etc/GMT] PHP Notice:  Undefined index: password in /home/farmroot/public_html/API/app/Device_staff_login.php on line 6
+[24-Oct-2018 06:55:58 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:55:58 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:55:58 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:55:59 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:59 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:59 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:55:59 Etc/GMT] PHP Notice:  Undefined index: username in /home/farmroot/public_html/API/app/Device_staff_login.php on line 5
+[24-Oct-2018 06:55:59 Etc/GMT] PHP Notice:  Undefined index: password in /home/farmroot/public_html/API/app/Device_staff_login.php on line 6
+[24-Oct-2018 06:55:59 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:55:59 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:55:59 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:56:13 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:56:13 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:56:13 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:56:13 Etc/GMT] PHP Notice:  Undefined index: username in /home/farmroot/public_html/API/app/Device_staff_login.php on line 5
+[24-Oct-2018 06:56:13 Etc/GMT] PHP Notice:  Undefined index: password in /home/farmroot/public_html/API/app/Device_staff_login.php on line 6
+[24-Oct-2018 06:56:13 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:56:13 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:56:13 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:56:29 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:56:29 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:56:29 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:56:29 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:56:29 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:56:29 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:56:42 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:56:42 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:56:42 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:56:42 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:56:42 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:56:42 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 06:57:55 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:57:55 Etc/GMT] PHP Warning:  include(Device_connection.php): failed to open stream: No such file or directory in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:57:55 Etc/GMT] PHP Warning:  include(): Failed opening 'Device_connection.php' for inclusion (include_path='.:/opt/alt/php54/usr/share/pear:/opt/alt/php54/usr/share/php') in /home/farmroot/public_html/API/app/Device_staff_login.php on line 3
+[24-Oct-2018 06:57:55 Etc/GMT] PHP Notice:  Undefined variable: conn in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:57:55 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 11
+[24-Oct-2018 06:57:55 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_login.php on line 13
+[24-Oct-2018 07:11:18 Etc/GMT] PHP Notice:  Undefined index: username in /home/farmroot/public_html/API/app/Device_staff_login.php on line 5
+[24-Oct-2018 07:11:18 Etc/GMT] PHP Notice:  Undefined index: password in /home/farmroot/public_html/API/app/Device_staff_login.php on line 6
+[24-Oct-2018 07:11:20 Etc/GMT] PHP Notice:  Undefined index: username in /home/farmroot/public_html/API/app/Device_staff_login.php on line 5
+[24-Oct-2018 07:11:20 Etc/GMT] PHP Notice:  Undefined index: password in /home/farmroot/public_html/API/app/Device_staff_login.php on line 6
+[24-Oct-2018 07:11:37 Etc/GMT] PHP Notice:  Undefined index: username in /home/farmroot/public_html/API/app/Device_staff_login.php on line 5
+[24-Oct-2018 07:11:37 Etc/GMT] PHP Notice:  Undefined index: password in /home/farmroot/public_html/API/app/Device_staff_login.php on line 6
+[24-Oct-2018 07:12:37 Etc/GMT] PHP Notice:  Undefined index: username in /home/farmroot/public_html/API/app/Device_staff_login.php on line 5
+[24-Oct-2018 07:12:37 Etc/GMT] PHP Notice:  Undefined index: password in /home/farmroot/public_html/API/app/Device_staff_login.php on line 6
+[24-Oct-2018 11:54:48 Etc/GMT] PHP Notice:  Undefined index: username in /home/farmroot/public_html/API/app/Device_staff_login.php on line 5
+[24-Oct-2018 11:54:48 Etc/GMT] PHP Notice:  Undefined index: password in /home/farmroot/public_html/API/app/Device_staff_login.php on line 6
+[24-Oct-2018 11:56:35 Etc/GMT] PHP Notice:  Undefined index: username in /home/farmroot/public_html/API/app/Device_staff_login.php on line 5
+[24-Oct-2018 11:56:35 Etc/GMT] PHP Notice:  Undefined index: password in /home/farmroot/public_html/API/app/Device_staff_login.php on line 6
+[25-Oct-2018 05:36:52 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[25-Oct-2018 05:50:52 Etc/GMT] PHP Notice:  Undefined index: customer_id in /home/farmroot/public_html/API/app/Device_staff_products.php on line 6
+[25-Oct-2018 06:03:18 Etc/GMT] PHP Notice:  Undefined index: customer_id in /home/farmroot/public_html/API/app/Device_staff_products.php on line 6
+[25-Oct-2018 06:03:18 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_products.php on line 7
+[25-Oct-2018 07:08:49 Etc/GMT] PHP Notice:  Undefined index: CartData in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 11
+[25-Oct-2018 07:08:49 Etc/GMT] PHP Notice:  Undefined index: DoctorPhone in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 32
+[25-Oct-2018 07:10:49 Etc/GMT] PHP Notice:  Undefined index: CartData in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 11
+[25-Oct-2018 07:10:49 Etc/GMT] PHP Notice:  Undefined index: DoctorPhone in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 32
+[25-Oct-2018 07:12:02 Etc/GMT] PHP Notice:  Undefined index: CartData in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 11
+[25-Oct-2018 07:12:02 Etc/GMT] PHP Notice:  Undefined index: DoctorPhone in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 32
+[25-Oct-2018 12:42:02 Asia/Kolkata] PHP Notice:  Undefined variable: query in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 70
+[25-Oct-2018 12:42:02 Asia/Kolkata] PHP Warning:  mysqli_query(): Empty query in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 70
+[25-Oct-2018 07:13:16 Etc/GMT] PHP Notice:  Undefined index: DoctorPhone in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 32
+[25-Oct-2018 12:43:16 Asia/Kolkata] PHP Notice:  Undefined variable: query in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 70
+[25-Oct-2018 12:43:16 Asia/Kolkata] PHP Warning:  mysqli_query(): Empty query in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 70
+[25-Oct-2018 07:14:19 Etc/GMT] PHP Notice:  Undefined index: DoctorPhone in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 32
+[25-Oct-2018 07:15:30 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 6
+[25-Oct-2018 07:15:30 Etc/GMT] PHP Notice:  Undefined index: customer_id in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 7
+[25-Oct-2018 07:15:30 Etc/GMT] PHP Notice:  Undefined index: StartLat in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 8
+[25-Oct-2018 07:15:30 Etc/GMT] PHP Notice:  Undefined index: StartLong in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 9
+[25-Oct-2018 07:15:30 Etc/GMT] PHP Notice:  Undefined index: GrandTotal in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 10
+[25-Oct-2018 07:15:30 Etc/GMT] PHP Notice:  Undefined index: staffNotes in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 12
+[25-Oct-2018 07:15:30 Etc/GMT] PHP Notice:  Undefined index: TaskID in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 13
+[25-Oct-2018 07:15:30 Etc/GMT] PHP Notice:  Undefined index: TaskType in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 14
+[25-Oct-2018 07:15:30 Etc/GMT] PHP Notice:  Undefined index: CreatedDate in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 15
+[25-Oct-2018 07:15:30 Etc/GMT] PHP Notice:  Undefined index: DueDate in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 16
+[25-Oct-2018 07:15:30 Etc/GMT] PHP Notice:  Undefined index: AdminNotes in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 17
+[25-Oct-2018 07:15:30 Etc/GMT] PHP Notice:  Undefined index: order_no in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 18
+[25-Oct-2018 07:15:30 Etc/GMT] PHP Notice:  Undefined index: order_id in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 19
+[25-Oct-2018 07:15:30 Etc/GMT] PHP Notice:  Undefined index: Priority in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 21
+[25-Oct-2018 07:15:30 Etc/GMT] PHP Notice:  Undefined index: Mode in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 23
+[25-Oct-2018 12:45:30 Asia/Kolkata] PHP Notice:  Undefined variable: query in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 70
+[25-Oct-2018 12:45:30 Asia/Kolkata] PHP Warning:  mysqli_query(): Empty query in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 70
+[29-Oct-2018 06:48:13 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 18
+[29-Oct-2018 07:21:34 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 07:22:48 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 07:23:42 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 07:24:06 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 07:25:50 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 07:40:29 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 07:41:55 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 07:44:16 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 07:47:06 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 07:48:25 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 07:48:57 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 07:49:43 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 07:57:16 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 08:06:23 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 10:36:24 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 10:36:51 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 10:37:35 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 10:37:48 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 10:37:53 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 10:37:59 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 10:38:17 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 10:38:20 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 10:38:33 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 10:40:13 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 10:59:37 Etc/GMT] PHP Notice:  Undefined index: customer_id in /home/farmroot/public_html/API/app/Device_staff_products.php on line 6
+[29-Oct-2018 10:59:37 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_products.php on line 7
+[29-Oct-2018 11:04:05 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 11:04:07 Etc/GMT] PHP Notice:  Undefined index: customer_id in /home/farmroot/public_html/API/app/Device_staff_products.php on line 6
+[29-Oct-2018 11:04:07 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_products.php on line 7
+[29-Oct-2018 11:05:37 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 11:05:39 Etc/GMT] PHP Notice:  Undefined index: customer_id in /home/farmroot/public_html/API/app/Device_staff_products.php on line 6
+[29-Oct-2018 11:05:39 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_products.php on line 7
+[29-Oct-2018 11:07:01 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 11:07:03 Etc/GMT] PHP Notice:  Undefined index: customer_id in /home/farmroot/public_html/API/app/Device_staff_products.php on line 6
+[29-Oct-2018 11:07:03 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_products.php on line 7
+[29-Oct-2018 11:11:07 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 11:11:09 Etc/GMT] PHP Notice:  Undefined index: customer_id in /home/farmroot/public_html/API/app/Device_staff_products.php on line 6
+[29-Oct-2018 11:11:09 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_products.php on line 7
+[29-Oct-2018 11:12:08 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 11:12:10 Etc/GMT] PHP Notice:  Undefined index: customer_id in /home/farmroot/public_html/API/app/Device_staff_products.php on line 6
+[29-Oct-2018 11:12:10 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_products.php on line 7
+[29-Oct-2018 11:12:37 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 11:12:39 Etc/GMT] PHP Notice:  Undefined index: customer_id in /home/farmroot/public_html/API/app/Device_staff_products.php on line 6
+[29-Oct-2018 11:12:39 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_products.php on line 7
+[29-Oct-2018 11:14:07 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 11:14:08 Etc/GMT] PHP Notice:  Undefined index: customer_id in /home/farmroot/public_html/API/app/Device_staff_products.php on line 6
+[29-Oct-2018 11:14:08 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_products.php on line 7
+[29-Oct-2018 11:16:49 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 11:17:23 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 11:18:54 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 11:20:46 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 11:25:52 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 11:28:45 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 11:31:35 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 11:32:08 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 11:35:07 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 11:36:41 Etc/GMT] PHP Notice:  Undefined index: customer_id in /home/farmroot/public_html/API/app/Device_staff_products.php on line 6
+[29-Oct-2018 11:36:41 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_products.php on line 7
+[29-Oct-2018 11:44:02 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 11:49:48 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 11:54:30 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 11:56:20 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 11:57:03 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 11:57:07 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 11:57:10 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 12:07:54 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 12:08:58 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 12:09:05 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 12:12:46 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 12:13:25 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 12:13:53 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 12:14:00 Etc/GMT] PHP Notice:  Undefined index: StartLat in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 8
+[29-Oct-2018 12:14:00 Etc/GMT] PHP Notice:  Undefined index: StartLong in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 9
+[29-Oct-2018 12:14:00 Etc/GMT] PHP Notice:  Undefined index: order_no in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 18
+[29-Oct-2018 12:14:00 Etc/GMT] PHP Notice:  Undefined index: order_id in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 19
+[29-Oct-2018 12:14:00 Etc/GMT] PHP Notice:  Undefined index: DoctorPhone in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 32
+[29-Oct-2018 12:19:54 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[29-Oct-2018 12:25:11 Etc/GMT] PHP Notice:  Undefined index: customer_id in /home/farmroot/public_html/API/app/Device_staff_products.php on line 6
+[29-Oct-2018 12:25:11 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_products.php on line 7
+[29-Oct-2018 12:25:11 Etc/GMT] PHP Notice:  Undefined index: order_id in /home/farmroot/public_html/API/app/Device_staff_products.php on line 8
+[30-Oct-2018 07:33:16 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[30-Oct-2018 07:33:30 Etc/GMT] PHP Notice:  Undefined index: order_no in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 18
+[30-Oct-2018 07:33:30 Etc/GMT] PHP Notice:  Undefined index: order_id in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 19
+[30-Oct-2018 07:33:30 Etc/GMT] PHP Notice:  Undefined index: DoctorPhone in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 32
+[30-Oct-2018 07:33:42 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[30-Oct-2018 07:34:15 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[30-Oct-2018 07:34:28 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[30-Oct-2018 07:37:53 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[30-Oct-2018 07:38:00 Etc/GMT] PHP Notice:  Undefined index: order_no in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 18
+[30-Oct-2018 07:38:00 Etc/GMT] PHP Notice:  Undefined index: order_id in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 19
+[30-Oct-2018 07:38:00 Etc/GMT] PHP Notice:  Undefined index: DoctorPhone in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 32
+[30-Oct-2018 07:43:11 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[30-Oct-2018 07:43:21 Etc/GMT] PHP Notice:  Undefined index: order_no in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 18
+[30-Oct-2018 07:43:21 Etc/GMT] PHP Notice:  Undefined index: order_id in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 19
+[30-Oct-2018 07:43:21 Etc/GMT] PHP Notice:  Undefined index: DoctorPhone in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 32
+[30-Oct-2018 07:43:21 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[30-Oct-2018 10:49:45 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[30-Oct-2018 10:50:14 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[30-Oct-2018 10:50:17 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[30-Oct-2018 10:52:39 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[31-Oct-2018 06:44:45 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_staff_payment.php on line 19
+[31-Oct-2018 12:18:18 Asia/Kolkata] PHP Notice:  Undefined index: StaffId in /home/farmroot/public_html/API/app/Device_staff_payment.php on line 6
+[31-Oct-2018 12:18:18 Asia/Kolkata] PHP Notice:  Undefined index: CustomerId in /home/farmroot/public_html/API/app/Device_staff_payment.php on line 7
+[31-Oct-2018 12:18:18 Asia/Kolkata] PHP Notice:  Undefined index: amount in /home/farmroot/public_html/API/app/Device_staff_payment.php on line 8
+[31-Oct-2018 12:18:18 Asia/Kolkata] PHP Notice:  Undefined index: PaymentNote in /home/farmroot/public_html/API/app/Device_staff_payment.php on line 9
+[31-Oct-2018 12:18:18 Asia/Kolkata] PHP Notice:  Undefined index: OrderId in /home/farmroot/public_html/API/app/Device_staff_payment.php on line 10
+[31-Oct-2018 11:14:47 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[31-Oct-2018 11:18:26 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[31-Oct-2018 11:18:32 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[31-Oct-2018 11:22:36 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[31-Oct-2018 11:22:44 Etc/GMT] PHP Notice:  Undefined index: order_no in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 18
+[31-Oct-2018 11:22:44 Etc/GMT] PHP Notice:  Undefined index: order_id in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 19
+[31-Oct-2018 11:22:44 Etc/GMT] PHP Notice:  Undefined index: DoctorPhone in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 32
+[31-Oct-2018 11:23:24 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[31-Oct-2018 11:23:30 Etc/GMT] PHP Notice:  Undefined index: StartLat in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 8
+[31-Oct-2018 11:23:30 Etc/GMT] PHP Notice:  Undefined index: StartLong in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 9
+[31-Oct-2018 11:23:30 Etc/GMT] PHP Notice:  Undefined index: order_no in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 18
+[31-Oct-2018 11:23:30 Etc/GMT] PHP Notice:  Undefined index: order_id in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 19
+[31-Oct-2018 11:23:30 Etc/GMT] PHP Notice:  Undefined index: DoctorPhone in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 32
+[31-Oct-2018 11:24:30 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[31-Oct-2018 11:24:37 Etc/GMT] PHP Notice:  Undefined index: order_no in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 18
+[31-Oct-2018 11:24:37 Etc/GMT] PHP Notice:  Undefined index: order_id in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 19
+[31-Oct-2018 11:24:37 Etc/GMT] PHP Notice:  Undefined index: DoctorPhone in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 32
+[31-Oct-2018 11:24:38 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[31-Oct-2018 11:36:45 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[31-Oct-2018 11:36:50 Etc/GMT] PHP Notice:  Undefined index: StartLat in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 8
+[31-Oct-2018 11:36:50 Etc/GMT] PHP Notice:  Undefined index: StartLong in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 9
+[31-Oct-2018 11:36:50 Etc/GMT] PHP Notice:  Undefined index: order_no in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 18
+[31-Oct-2018 11:36:50 Etc/GMT] PHP Notice:  Undefined index: order_id in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 19
+[31-Oct-2018 11:36:50 Etc/GMT] PHP Notice:  Undefined index: DoctorPhone in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 32
+[31-Oct-2018 11:36:51 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[31-Oct-2018 11:37:12 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[31-Oct-2018 11:37:38 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[31-Oct-2018 11:38:05 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[31-Oct-2018 11:38:25 Etc/GMT] PHP Notice:  Undefined index: order_no in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 18
+[31-Oct-2018 11:38:25 Etc/GMT] PHP Notice:  Undefined index: order_id in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 19
+[31-Oct-2018 11:38:25 Etc/GMT] PHP Notice:  Undefined index: DoctorPhone in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 32
+[31-Oct-2018 11:38:26 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[01-Nov-2018 05:07:47 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[01-Nov-2018 05:08:19 Etc/GMT] PHP Notice:  Undefined index: order_no in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 18
+[01-Nov-2018 05:08:19 Etc/GMT] PHP Notice:  Undefined index: order_id in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 19
+[01-Nov-2018 05:08:19 Etc/GMT] PHP Notice:  Undefined index: DoctorPhone in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 32
+[01-Nov-2018 05:08:20 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[01-Nov-2018 05:08:24 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[01-Nov-2018 05:08:44 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[01-Nov-2018 05:09:04 Etc/GMT] PHP Notice:  Undefined index: order_no in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 18
+[01-Nov-2018 05:09:04 Etc/GMT] PHP Notice:  Undefined index: order_id in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 19
+[01-Nov-2018 05:09:04 Etc/GMT] PHP Notice:  Undefined index: DoctorPhone in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 32
+[01-Nov-2018 05:09:06 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[01-Nov-2018 05:10:40 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[01-Nov-2018 05:11:04 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[01-Nov-2018 05:14:06 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[01-Nov-2018 05:15:11 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[01-Nov-2018 05:16:01 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[01-Nov-2018 05:18:09 Etc/GMT] PHP Notice:  Undefined index: order_no in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 18
+[01-Nov-2018 05:18:09 Etc/GMT] PHP Notice:  Undefined index: order_id in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 19
+[01-Nov-2018 05:18:09 Etc/GMT] PHP Notice:  Undefined index: DoctorPhone in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 32
+[01-Nov-2018 05:18:09 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[01-Nov-2018 05:18:26 Etc/GMT] PHP Notice:  Undefined index: order_no in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 18
+[01-Nov-2018 05:18:26 Etc/GMT] PHP Notice:  Undefined index: order_id in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 19
+[01-Nov-2018 05:18:26 Etc/GMT] PHP Notice:  Undefined index: DoctorPhone in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 32
+[01-Nov-2018 10:51:49 Asia/Kolkata] PHP Notice:  Undefined index: StaffId in /home/farmroot/public_html/API/app/Device_staff_payment.php on line 6
+[01-Nov-2018 05:23:49 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[01-Nov-2018 05:25:53 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[01-Nov-2018 05:28:25 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[01-Nov-2018 05:34:59 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[01-Nov-2018 06:51:56 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[01-Nov-2018 06:57:07 Etc/GMT] PHP Notice:  Undefined index: staff_id in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 8
+[01-Nov-2018 11:26:21 Etc/GMT] PHP Notice:  Undefined index: AgentID in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 8
+[01-Nov-2018 11:26:21 Etc/GMT] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 99
+[01-Nov-2018 11:27:15 Etc/GMT] PHP Notice:  Undefined index: AgentID in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 8
+[01-Nov-2018 11:27:15 Etc/GMT] PHP Notice:  Undefined index: From in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 9
+[01-Nov-2018 11:27:15 Etc/GMT] PHP Notice:  Undefined index: To in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 10
+[01-Nov-2018 11:27:15 Etc/GMT] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 99
+[01-Nov-2018 11:27:33 Etc/GMT] PHP Notice:  Undefined index: AgentID in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 8
+[01-Nov-2018 11:47:35 Etc/GMT] PHP Notice:  Undefined index: StaffID in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 11
+[01-Nov-2018 11:47:35 Etc/GMT] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 63
+[01-Nov-2018 11:47:35 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 71
+[01-Nov-2018 11:47:54 Etc/GMT] PHP Notice:  Undefined index: StaffID in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 11
+[01-Nov-2018 11:47:54 Etc/GMT] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 63
+[01-Nov-2018 11:47:54 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 71
+[01-Nov-2018 11:48:01 Etc/GMT] PHP Notice:  Undefined index: StaffID in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 11
+[01-Nov-2018 11:48:01 Etc/GMT] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 63
+[01-Nov-2018 11:48:01 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 71
+[01-Nov-2018 11:48:06 Etc/GMT] PHP Notice:  Undefined index: StaffID in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 11
+[01-Nov-2018 11:48:06 Etc/GMT] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 63
+[01-Nov-2018 11:48:06 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 71
+[01-Nov-2018 11:49:15 Etc/GMT] PHP Notice:  Undefined index: StaffID in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 11
+[01-Nov-2018 11:49:32 Etc/GMT] PHP Notice:  Undefined index: StaffID in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 11
+[01-Nov-2018 11:49:46 Etc/GMT] PHP Notice:  Undefined index: StaffID in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 11
+[01-Nov-2018 11:52:43 Etc/GMT] PHP Notice:  Undefined index: AgentID in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 8
+[01-Nov-2018 11:52:53 Etc/GMT] PHP Notice:  Undefined index: AgentID in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 8
+[01-Nov-2018 11:53:22 Etc/GMT] PHP Notice:  Undefined index: AgentID in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 8
+[01-Nov-2018 11:53:43 Etc/GMT] PHP Notice:  Undefined index: AgentID in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 8
+[01-Nov-2018 11:53:43 Etc/GMT] PHP Notice:  Undefined index: From in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 9
+[01-Nov-2018 11:53:43 Etc/GMT] PHP Notice:  Undefined index: To in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 10
+[01-Nov-2018 11:53:43 Etc/GMT] PHP Notice:  Undefined index: From in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 17
+[01-Nov-2018 11:53:43 Etc/GMT] PHP Notice:  Undefined index: To in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 18
+[01-Nov-2018 11:53:54 Etc/GMT] PHP Notice:  Undefined index: AgentID in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 8
+[01-Nov-2018 11:53:54 Etc/GMT] PHP Notice:  Undefined index: From in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 9
+[01-Nov-2018 11:53:54 Etc/GMT] PHP Notice:  Undefined index: To in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 10
+[01-Nov-2018 11:53:54 Etc/GMT] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 99
+[01-Nov-2018 11:55:08 Etc/GMT] PHP Notice:  Undefined index: AgentID in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 8
+[01-Nov-2018 11:55:08 Etc/GMT] PHP Notice:  Undefined index: From in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 9
+[01-Nov-2018 11:55:08 Etc/GMT] PHP Notice:  Undefined index: To in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 10
+[01-Nov-2018 11:55:08 Etc/GMT] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 99
+[01-Nov-2018 11:57:24 Etc/GMT] PHP Notice:  Undefined index: AgentID in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 8
+[01-Nov-2018 11:57:24 Etc/GMT] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 99
+[01-Nov-2018 11:57:36 Etc/GMT] PHP Notice:  Undefined index: AgentID in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 8
+[01-Nov-2018 11:58:02 Etc/GMT] PHP Notice:  Undefined index: AgentID in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 8
+[01-Nov-2018 11:58:02 Etc/GMT] PHP Notice:  Undefined index: From in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 9
+[01-Nov-2018 11:58:02 Etc/GMT] PHP Notice:  Undefined index: To in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 10
+[01-Nov-2018 11:58:02 Etc/GMT] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 99
+[01-Nov-2018 11:58:33 Etc/GMT] PHP Notice:  Undefined index: AgentID in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 8
+[01-Nov-2018 11:58:33 Etc/GMT] PHP Notice:  Undefined index: From in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 9
+[01-Nov-2018 11:58:33 Etc/GMT] PHP Notice:  Undefined index: To in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 10
+[01-Nov-2018 11:58:33 Etc/GMT] PHP Notice:  Undefined index: From in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 17
+[01-Nov-2018 11:58:33 Etc/GMT] PHP Notice:  Undefined index: To in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 18
+[01-Nov-2018 11:58:52 Etc/GMT] PHP Notice:  Undefined index: AgentID in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 8
+[01-Nov-2018 11:58:52 Etc/GMT] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 99
+[01-Nov-2018 12:00:43 Etc/GMT] PHP Notice:  Undefined index: AgentID in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 8
+[01-Nov-2018 12:00:43 Etc/GMT] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 99
+[01-Nov-2018 12:00:59 Etc/GMT] PHP Notice:  Undefined index: AgentID in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 8
+[01-Nov-2018 12:00:59 Etc/GMT] PHP Notice:  Undefined index: From in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 9
+[01-Nov-2018 12:00:59 Etc/GMT] PHP Notice:  Undefined index: To in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 10
+[01-Nov-2018 12:00:59 Etc/GMT] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 99
+[01-Nov-2018 12:02:50 Etc/GMT] PHP Notice:  Undefined index: From in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 9
+[01-Nov-2018 12:02:50 Etc/GMT] PHP Notice:  Undefined index: To in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 10
+[01-Nov-2018 12:02:50 Etc/GMT] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 99
+[01-Nov-2018 12:05:40 Etc/GMT] PHP Notice:  Undefined index: From in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 9
+[01-Nov-2018 12:05:40 Etc/GMT] PHP Notice:  Undefined index: To in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 10
+[01-Nov-2018 12:08:01 Etc/GMT] PHP Notice:  Undefined index: From in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 9
+[01-Nov-2018 12:08:01 Etc/GMT] PHP Notice:  Undefined index: To in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 10
+[01-Nov-2018 12:14:00 Etc/GMT] PHP Notice:  Undefined index: From in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 9
+[01-Nov-2018 12:14:00 Etc/GMT] PHP Notice:  Undefined index: To in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 10
+[01-Nov-2018 12:14:00 Etc/GMT] PHP Notice:  Undefined variable: data in /home/farmroot/public_html/API/app/Device_clinic_payment_details.php on line 172
+[02-Nov-2018 09:54:04 Asia/Kolkata] PHP Catchable fatal error:  Object of class mysqli_result could not be converted to string in /home/farmroot/public_html/API/app/Device_staff_payment.php on line 51
+[02-Nov-2018 09:55:09 Asia/Kolkata] PHP Notice:  Undefined variable: mobile in /home/farmroot/public_html/API/app/Device_staff_payment.php on line 28
+[03-Nov-2018 05:16:19 Etc/GMT] PHP Notice:  Undefined index: DoctorPhone in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 32
+[03-Nov-2018 05:17:56 Etc/GMT] PHP Notice:  Undefined index: DoctorPhone in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 32
+[09-Nov-2018 06:14:31 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_payment_history.php on line 16
+[09-Nov-2018 06:16:27 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_payment_history.php on line 16
+[09-Nov-2018 07:23:08 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_staff_customer_details.php on line 16
+[09-Nov-2018 14:56:16 Asia/Kolkata] PHP Warning:  mysqli_query(): Empty query in /home/farmroot/public_html/API/app/Device_order_modify.php on line 84
+[09-Nov-2018 09:26:47 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 44
+[09-Nov-2018 09:33:20 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 44
+[09-Nov-2018 11:05:06 Etc/GMT] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, string given in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 58
+[09-Nov-2018 11:11:18 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_payment_history.php on line 16
+[09-Nov-2018 11:13:15 Etc/GMT] PHP Fatal error:  Cannot use object of type mysqli_result as array in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 57
+[09-Nov-2018 11:14:01 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_payment_history.php on line 16
+[09-Nov-2018 11:14:18 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_payment_history.php on line 16
+[09-Nov-2018 11:49:25 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_completed_tasks.php on line 12
+[09-Nov-2018 11:51:28 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_completed_tasks.php on line 12
+[09-Nov-2018 11:51:35 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_completed_tasks.php on line 12
+[09-Nov-2018 11:51:57 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_completed_tasks.php on line 12
+[09-Nov-2018 11:54:46 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_completed_tasks.php on line 12
+[09-Nov-2018 11:56:19 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_completed_tasks.php on line 12
+[09-Nov-2018 12:18:51 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_payment_history.php on line 16
+[09-Nov-2018 12:19:35 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_payment_history.php on line 16
+[09-Nov-2018 12:20:25 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_payment_history.php on line 16
+[09-Nov-2018 12:21:40 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_payment_history.php on line 16
+[09-Nov-2018 12:22:49 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_payment_history.php on line 16
+[12-Nov-2018 04:28:57 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_staff_task_details.php on line 16
+[12-Nov-2018 04:31:05 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_staff_task_details.php on line 16
+[16-Nov-2018 09:38:10 Asia/Kolkata] PHP Warning:  mysqli_query(): Empty query in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 71
+[16-Nov-2018 09:38:19 Asia/Kolkata] PHP Warning:  mysqli_query(): Empty query in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 71
+[16-Nov-2018 09:38:26 Asia/Kolkata] PHP Warning:  mysqli_query(): Empty query in /home/farmroot/public_html/API/app/Device_staff_task_save.php on line 71
+[10-Dec-2018 03:52:26 Etc/GMT] PHP Warning:  mysqli_connect(): (HY000/1203): User farmroot_farmroo already has more than 'max_user_connections' active connections in /home/farmroot/public_html/API/app/Device_connection.php on line 2
+[10-Dec-2018 03:52:26 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 13
+[10-Dec-2018 03:52:26 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 16
+[10-Dec-2018 03:52:26 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, boolean given in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 41
+[10-Dec-2018 03:52:26 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/farmroot/public_html/API/app/Device_staff_tasks.php on line 44
+[09-Jan-2019 06:26:22 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_staff_pay.php on line 13
+[09-Jan-2019 06:34:08 Etc/GMT] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, object given in /home/farmroot/public_html/API/app/Device_staff_pay.php on line 13
+[09-Jan-2019 09:53:23 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_completed_tasks.php on line 12
+[09-Jan-2019 09:54:02 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_completed_tasks.php on line 12
+[09-Jan-2019 09:56:29 Etc/GMT] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, boolean given in /home/farmroot/public_html/API/app/Device_completed_tasks.php on line 12

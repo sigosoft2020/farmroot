@@ -54,7 +54,7 @@ class Notification extends CI_Controller {
 		}
 		if ($this->Common->insert('notification',$array)) {
 
-			    $SERVER_API_KEY = "AAAAGCRTVI0:APA91bEoHDY3sM_4v4nw26b91G4lLnhL7RpbEKrXaf7yvm-tbhEQVHmkFtHbZ3s-XWVWb9G3SUynEkejbKb5K5aWrmuW_nQ3nG3gXS3xrtNsAzK2zMibrKJjDAQRXK-0WjjCmoW-QSH0";
+			    $SERVER_API_KEY = "AAAAz7M3q5U:APA91bEtCf8zMCKuIVpg6f8RAREzU4j_lu8lfjSkfPGpFWm8G4lllKOums9Wdhw3XwkThuqm9ZmUtWH3CykX79jv-49uWkuf0ZB2kEoTJagVD0vSWsk8y5Z1gxb8XK19CcZjYAJ_2u7U";
 				$to        = "/topics" . "/FCM-TOPIC-FARMROOT";
                 $image_url ='https://localhost/farmroot/'.$path;
                 // $  ='https://localhost/farmroot/'.$path;

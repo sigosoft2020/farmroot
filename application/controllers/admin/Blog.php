@@ -115,8 +115,8 @@ class Blog extends CI_Controller {
 
 		$category_name = $this->security->xss_clean($this->input->post('category_name'));
 
-		$vendor_check = $this->Common->get_details('blog_categories',array('cat_name'=>$category_name));
-		if($vendor_check->num_rows()==0)
+		$category_check = $this->Common->get_details('blog_categories',array('cat_name'=>$category_name));
+		if($category_check->num_rows()==0)
         {
 			$array = [
 						'cat_name'         => $category_name,
@@ -269,6 +269,51 @@ class Blog extends CI_Controller {
                                    ];
                   $this->Common->insert('blog_products',$product_array);                 
 				}
+				
+				    $SERVER_API_KEY = "AAAAz7M3q5U:APA91bEtCf8zMCKuIVpg6f8RAREzU4j_lu8lfjSkfPGpFWm8G4lllKOums9Wdhw3XwkThuqm9ZmUtWH3CykX79jv-49uWkuf0ZB2kEoTJagVD0vSWsk8y5Z1gxb8XK19CcZjYAJ_2u7U";
+            		$to = "/topics" . "/FCM-TOPIC-FARMROOT";
+            
+            		$header = [
+            			'Authorization: key='. $SERVER_API_KEY,
+            			'Content-Type: Application/json'
+            		];
+            
+            		$notification = [
+            			'title' => 'New blog',
+            			'body' => 'New blog added',
+            			'content_available' => true
+            		];
+            
+            		$data = [
+            			'title' => 'New blog',
+            			'body' => 'New blog added',
+            			'data' => $array
+            		];
+            
+            		$payload = [
+            			'data' => $data,
+            			'notification' => $notification,
+            			'to' => $to,
+            			'priority' => 10
+            		];
+            
+            		$url = 'https://fcm.googleapis.com/fcm/send';
+            
+            		$curl = curl_init();
+            
+            		curl_setopt_array($curl, array(
+            			 CURLOPT_URL => "https://fcm.googleapis.com/fcm/send",
+            			 CURLOPT_RETURNTRANSFER => true,
+            			 CURLOPT_CUSTOMREQUEST => "POST",
+            			 CURLOPT_POSTFIELDS => json_encode($payload),
+            			 CURLOPT_HTTPHEADER => $header,
+            		));
+            
+            		$response = curl_exec($curl);
+            		$err = curl_error($curl);
+            
+            		curl_close($curl);
+				
 				$this->session->set_flashdata('alert_type', 'success');
 				$this->session->set_flashdata('alert_title', 'Success');
 				$this->session->set_flashdata('alert_message', 'New blog added..!');
